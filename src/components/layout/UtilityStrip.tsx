@@ -5,13 +5,15 @@ import { ReactNode } from "react";
 export function UtilityStrip({
   left,
   right,
+  size = "default",
 }: {
   left: ReactNode;
   right: ReactNode;
+  size?: "default" | "prize";
 }) {
   return (
     <div className="bg-ink text-white/65">
-      <Container>
+      <Container size={size}>
         <div className="flex items-center justify-between py-2.5 font-mono text-[11px] flex-col sm:flex-row gap-2 sm:gap-0">
           {left}
           {right}

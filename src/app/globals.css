@@ -102,6 +102,70 @@ body {
   border: 1px dashed rgba(255, 255, 255, 0.25);
 }
 
+/* Prize page: numbered steps ("01", "02"...) */
+.steps {
+  counter-reset: step;
+}
+.step-num {
+  counter-increment: step;
+}
+.step-num::before {
+  content: "0" counter(step);
+}
+
+/* Prize page: vertical timeline with dots */
+.timeline {
+  position: relative;
+  padding-left: 32px;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  background: var(--line);
+}
+.tl-dot {
+  position: absolute;
+  left: -32px;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--paper);
+  border: 2.5px solid var(--line);
+}
+.tl-item.active .tl-dot {
+  border-color: var(--blue);
+  background: var(--blue);
+}
+
+/* Prize page: spotlight card top gradient rule */
+.spotlight::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, var(--blue-deep), var(--blue), var(--navy), var(--blue));
+}
+
+/* FAQ accordion: grid-rows trick for smooth height animation without JS measuring */
+.faq-a-wrap {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.25s ease;
+}
+.faq-item.open .faq-a-wrap {
+  grid-template-rows: 1fr;
+}
+.faq-a-inner {
+  overflow: hidden;
+}
+
 /* Moments carousel scrollbar */
 .moments-scroller {
   scrollbar-width: thin;

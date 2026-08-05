@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ReactNode } from "react";
 import { Container } from "@/components/ui/Container";
 import { Logo } from "@/components/ui/Logo";
 import { BrandBar } from "@/components/ui/BrandBar";
@@ -13,15 +14,20 @@ export function Footer({
   columns,
   bottomLeft,
   bottomLinks = [],
+  bottomRight,
+  size = "default",
 }: {
   tagline: string;
   columns: FooterColumn[];
   bottomLeft: string;
   bottomLinks?: { label: string; href: string }[];
+  bottomRight?: ReactNode;
+  size?: "default" | "prize";
 }) {
+  const compact = size === "prize";
   return (
-    <footer className="bg-paper pt-20">
-      <Container>
+    <footer className={`bg-paper ${compact ? "pt-16" : "pt-20"}`}>
+      <Container size={size}>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.3fr_repeat(auto-fit,minmax(120px,1fr))] gap-8 pb-16 border-b border-line">
           <div>
             <div className="mb-4">
@@ -50,13 +56,15 @@ export function Footer({
         </div>
         <div className="py-6 flex justify-between items-center flex-wrap gap-3">
           <p className="text-xs text-ink-soft">{bottomLeft}</p>
-          <div className="flex gap-5 text-xs text-ink-soft">
-            {bottomLinks.map((link) => (
-              <Link key={link.label} href={link.href} className="hover:text-blue">
-                {link.label}
-              </Link>
-            ))}
-          </div>
+          {bottomRight ?? (
+            <div className="flex gap-5 text-xs text-ink-soft">
+              {bottomLinks.map((link) => (
+                <Link key={link.label} href={link.href} className="hover:text-blue">
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          )}
         </div>
       </Container>
       <BrandBar thick />

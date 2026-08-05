@@ -10,14 +10,16 @@ export function Nav({
   ctaLabel,
   ctaHref,
   logoHref = "/",
+  size = "default",
 }: {
   links: NavLink[];
   ctaLabel: string;
   ctaHref: string;
   logoHref?: string;
+  size?: "default" | "prize";
 }) {
   return (
-    <Container>
+    <Container size={size}>
       <nav className="flex items-center justify-between py-5 border-b border-line">
         <Logo href={logoHref} />
         <div className="hidden md:flex gap-8 text-sm font-medium">

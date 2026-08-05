@@ -1,8 +1,4 @@
 import { BrandBar } from "@/components/ui/BrandBar";
-import { Button } from "@/components/ui/Button";
-import { Eyebrow } from "@/components/ui/Eyebrow";
-import { SectionHead } from "@/components/ui/SectionHead";
-import { Container } from "@/components/ui/Container";
 import { Nav } from "@/components/layout/Nav";
 import {
   UtilityStrip,
@@ -10,6 +6,17 @@ import {
   SocialIcons,
 } from "@/components/layout/UtilityStrip";
 import { Footer } from "@/components/layout/Footer";
+import { Hero } from "@/components/home/Hero";
+import { PromoRow } from "@/components/home/PromoRow";
+import { WhatIs } from "@/components/home/WhatIs";
+import { Storytellers } from "@/components/home/Storytellers";
+import { Mission } from "@/components/home/Mission";
+import { HowWeServe } from "@/components/home/HowWeServe";
+import { Moments } from "@/components/home/Moments";
+import { News } from "@/components/home/News";
+import { PartnersRow } from "@/components/ui/PartnersRow";
+import { Newsletter } from "@/components/home/Newsletter";
+import { partners } from "@/lib/content/home";
 
 export default function Home() {
   return (
@@ -52,35 +59,21 @@ export default function Home() {
       />
 
       <main className="flex-1">
-        <Container className="py-24">
-          <Eyebrow className="text-blue mb-4">Design System</Eyebrow>
-          <h1 className="font-display font-bold text-[clamp(38px,6vw,68px)] tracking-tight mb-6">
-            Shared components, ready for the real pages.
-          </h1>
-          <p className="max-w-[560px] text-ink-soft leading-relaxed mb-10">
-            Brand bar, utility strip, nav, footer, buttons, and section heads
-            are extracted from both the homepage and Storytelling Prize
-            designs. Next: build the actual homepage and prize page routes
-            with WordPress-backed content.
-          </p>
-          <div className="flex gap-4 flex-wrap mb-16">
-            <Button href="/prize/2026" variant="solid">
-              Solid Button
-            </Button>
-            <Button href="/prize/2026" variant="blue">
-              Blue Button
-            </Button>
-            <Button href="/prize/2026" variant="outline">
-              Outline Button
-            </Button>
-          </div>
-
-          <SectionHead
-            eyebrow="Example Section"
-            title="Section Head Component"
-            description="Used across both the homepage and prize page for consistent section intros."
+        <Hero />
+        <PromoRow />
+        <WhatIs />
+        <Storytellers />
+        <Mission />
+        <HowWeServe />
+        <Moments />
+        <News />
+        <section className="bg-mist py-[104px]" id="partners">
+          <PartnersRow
+            partners={partners}
+            note="Partners on past editions and programmes — not standing sponsors, but collaborators who've lent their expertise along the way."
           />
-        </Container>
+        </section>
+        <Newsletter />
       </main>
 
       <Footer
@@ -89,15 +82,37 @@ export default function Home() {
           {
             title: "About",
             links: [
-              { label: "Our Story", href: "#" },
-              { label: "Vision & Mission", href: "#" },
+              { label: "Our Story", href: "#about" },
+              { label: "Vision & Mission", href: "#mission" },
+              { label: "The ACE Framework", href: "#what-we-do" },
+              { label: "Governance", href: "#" },
+            ],
+          },
+          {
+            title: "What We Do",
+            links: [
+              { label: "Arts & Culture Engagement", href: "#what-we-do" },
+              { label: "Talent Development", href: "#what-we-do" },
+              { label: "Community & Inclusion", href: "#what-we-do" },
+              { label: "Sustainable Enterprise", href: "#what-we-do" },
             ],
           },
           {
             title: "Get Involved",
             links: [
               { label: "Nominate a Storyteller", href: "/prize/2026" },
-              { label: "Partner With Us", href: "#" },
+              { label: "Become a Mentor", href: "#" },
+              { label: "Partner With Us", href: "#partners" },
+              { label: "Volunteer", href: "#" },
+            ],
+          },
+          {
+            title: "Witsprouts Family",
+            links: [
+              { label: "Witsprouts Books", href: "https://witsprouts.com/books" },
+              { label: "Witsprouts Bookstack", href: "https://bookstack.witsprouts.com" },
+              { label: "Storyrat", href: "https://storyrat.witsprouts.com" },
+              { label: "The Moveee", href: "https://themoveee.com" },
             ],
           },
         ]}

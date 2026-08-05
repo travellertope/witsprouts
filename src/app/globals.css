@@ -70,11 +70,47 @@ body {
   height: 16px;
 }
 
-/* Logo mark: arrow/chevron cut from a blue-navy gradient square */
-.logo-mark {
-  width: 26px;
-  height: 26px;
+/* Chevron mark shape, sized/colored per use-site via Tailwind utilities */
+.chevron-mark {
   flex: none;
-  background: linear-gradient(135deg, var(--blue), var(--navy));
   clip-path: polygon(0 0, 100% 50%, 0 100%, 30% 50%);
+}
+
+/* Homepage hero: photo scrim + diagonal brand-gradient wedge */
+.hero-scrim {
+  background: linear-gradient(
+    100deg,
+    var(--ink) 0%,
+    rgba(10, 10, 10, 0.88) 32%,
+    rgba(10, 10, 10, 0.55) 60%,
+    rgba(10, 10, 10, 0.35) 100%
+  );
+}
+.hero-bg-shape {
+  background: linear-gradient(160deg, var(--navy) 0%, var(--blue) 55%, transparent 100%);
+  opacity: 0.4;
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+  mix-blend-mode: screen;
+}
+
+/* Mission section seal */
+.mission-seal::before {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  border-radius: 50%;
+  border: 1px dashed rgba(255, 255, 255, 0.25);
+}
+
+/* Moments carousel scrollbar */
+.moments-scroller {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.25) transparent;
+}
+.moments-scroller::-webkit-scrollbar {
+  height: 5px;
+}
+.moments-scroller::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
 }

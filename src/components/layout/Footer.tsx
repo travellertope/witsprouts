@@ -38,7 +38,7 @@ export function Footer({
               </h4>
               <ul className="space-y-3">
                 {col.links.map((link) => (
-                  <li key={link.href} className="text-sm">
+                  <li key={link.label} className="text-sm">
                     <a href={link.href} className="hover:text-blue">
                       {link.label}
                     </a>
@@ -52,7 +52,7 @@ export function Footer({
           <p className="text-xs text-ink-soft">{bottomLeft}</p>
           <div className="flex gap-5 text-xs text-ink-soft">
             {bottomLinks.map((link) => (
-              <Link key={link.href} href={link.href} className="hover:text-blue">
+              <Link key={link.label} href={link.href} className="hover:text-blue">
                 {link.label}
               </Link>
             ))}

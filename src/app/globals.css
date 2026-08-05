@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #0a0a0a;
+  --ink-soft: #3a3f47;
+  --paper: #ffffff;
+  --mist: #f3f5f9;
+  --mist-2: #eceff4;
+  --line: #e3e6ec;
+  --blue: #0296ff;
+  --blue-deep: #0a2647;
+  --navy: #123b6d;
+  --cream: #f1ece1;
+  --gold: #b98a2f;
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-paper: var(--paper);
+  --color-mist: var(--mist);
+  --color-mist-2: var(--mist-2);
+  --color-line: var(--line);
+  --color-blue: var(--blue);
+  --color-blue-deep: var(--blue-deep);
+  --color-navy: var(--navy);
+  --color-cream: var(--cream);
+  --color-gold: var(--gold);
+
+  --font-display: var(--font-space-grotesk), sans-serif;
+  --font-body: var(--font-inter), sans-serif;
+  --font-mono: var(--font-jetbrains-mono), monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Signature brand gradient bar, used top/bottom of every page */
+.brand-bar {
+  height: 9px;
+  background: linear-gradient(
+    90deg,
+    var(--blue-deep) 0%,
+    var(--blue) 38%,
+    var(--navy) 62%,
+    var(--blue) 100%
+  );
+  position: relative;
+  overflow: hidden;
+}
+.brand-bar::after {
+  content: "";
+  position: absolute;
+  top: -60%;
+  left: 18%;
+  width: 14%;
+  height: 220%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: skewX(-18deg);
+}
+.brand-bar.thick {
+  height: 16px;
+}
+
+/* Logo mark: arrow/chevron cut from a blue-navy gradient square */
+.logo-mark {
+  width: 26px;
+  height: 26px;
+  flex: none;
+  background: linear-gradient(135deg, var(--blue), var(--navy));
+  clip-path: polygon(0 0, 100% 50%, 0 100%, 30% 50%);
+}

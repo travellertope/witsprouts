@@ -46,7 +46,7 @@ export default function Home() {
       <Nav
         links={[
           { label: "About", href: "/about" },
-          { label: "What We Do", href: "#what-we-do" },
+          { label: "What We Do", href: "/what-we-do" },
           { label: "Storytellers", href: "#storytellers" },
           { label: "Impact", href: "#mission" },
           { label: "Partners", href: "#partners" },
@@ -96,10 +96,10 @@ export default function Home() {
           {
             title: "What We Do",
             links: [
-              { label: "Arts & Culture Engagement", href: "#what-we-do" },
-              { label: "Talent Development", href: "#what-we-do" },
-              { label: "Community & Inclusion", href: "#what-we-do" },
-              { label: "Sustainable Enterprise", href: "#what-we-do" },
+              { label: "Arts & Culture Engagement", href: "/what-we-do#p1" },
+              { label: "Talent Development", href: "/what-we-do#p2" },
+              { label: "Community & Inclusion", href: "/what-we-do#p3" },
+              { label: "Sustainable Enterprise", href: "/what-we-do#p5" },
             ],
           },
           {

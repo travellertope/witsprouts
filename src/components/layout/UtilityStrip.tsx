@@ -14,9 +14,11 @@ export function UtilityStrip({
   return (
     <div className="bg-ink text-white/65">
       <Container size={size}>
-        <div className="flex items-center justify-between py-2.5 text-xs flex-col sm:flex-row gap-2 sm:gap-0">
-          {left}
-          {right}
+        <div className="flex items-center justify-between py-2.5 text-xs gap-4">
+          <div className="min-w-0 overflow-x-auto whitespace-nowrap [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            {left}
+          </div>
+          <div className="flex-none">{right}</div>
         </div>
       </Container>
     </div>
@@ -52,9 +54,9 @@ export function FamilyLinks({
   links: { label: string; href: string }[];
 }) {
   return (
-    <div className="flex gap-5 flex-wrap">
+    <div className="flex gap-5">
       {links.map((link) => (
-        <a key={link.href} href={link.href} className="hover:text-blue">
+        <a key={link.href} href={link.href} className="hover:text-blue flex-none">
           {link.label}
         </a>
       ))}
@@ -68,13 +70,13 @@ export function SocialIcons({
   items: { label: string; href: string }[];
 }) {
   return (
-    <div className="flex gap-3">
+    <div className="flex gap-2.5 sm:gap-3">
       {items.map((item) => (
         <a
           key={item.label}
           href={item.href}
           aria-label={item.label}
-          className="w-[22px] h-[22px] rounded-full border border-white/30 flex items-center justify-center text-[11px] hover:border-blue hover:text-blue"
+          className="w-[22px] h-[22px] rounded-full border border-white/30 flex items-center justify-center text-[11px] hover:border-blue hover:text-blue flex-none"
         >
           {item.label.slice(0, 2).toUpperCase()}
         </a>

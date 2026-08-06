@@ -4,7 +4,7 @@ import { ButtonHTMLAttributes, ReactNode } from "react";
 type Variant = "solid" | "blue" | "outline" | "white";
 
 const base =
-  "inline-flex items-center gap-2 text-sm font-semibold px-[26px] py-3.5 rounded-[2px] border-[1.5px] transition-all duration-200 whitespace-nowrap cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed";
+  "inline-flex items-center gap-2 text-sm font-semibold px-[26px] py-3.5 rounded-[2px] border-[1.5px] transition-all duration-200 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed max-w-full";
 
 const variants: Record<Variant, string> = {
   solid: "bg-ink border-ink text-paper hover:bg-blue hover:border-blue",

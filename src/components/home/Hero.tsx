@@ -29,7 +29,7 @@ export function Hero() {
           <Button href="/prize/2026" variant="solid" className="!bg-white !text-ink !border-white">
             Nominate a Storyteller →
           </Button>
-          <Button href="#what-we-do" variant="white">
+          <Button href="/what-we-do" variant="white">
             See What We Do
           </Button>
         </div>

@@ -90,29 +90,3 @@ export const partners: Partner[] = [
   { name: "The Moveee", tag: "2025 Storytelling Prize Partner" },
 ];
 
-export const servePillars = {
-  engage: [
-    "Community Arts Events & Exhibitions",
-    "The Witsprouts Annual Arts Festival",
-    "Media Campaigns For African Arts & Heritage",
-    "Digital Culture Platforms",
-  ],
-  develop: [
-    "Creative Workshops & Masterclasses",
-    "The Witsprouts Mentorship Programme",
-    "The Witsprouts Creative Residency",
-    "Publishing & Media Initiative",
-  ],
-  include: [
-    "Cross-Community Storytelling Initiatives",
-    "Safe Spaces For Dialogue & Healing",
-    "Bursary & Scholarship Fund",
-    "Amplifying Marginalised Voices",
-  ],
-  sustain: [
-    "Creative Enterprise & Livelihoods Programme",
-    "Grants & Sponsorship Partnerships",
-    "Business & Financial Literacy Training",
-    "Strategic Alliances & Institutional Partners",
-  ],
-} satisfies Record<string, string[]>;

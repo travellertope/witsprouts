@@ -2,27 +2,24 @@ import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 
-const images = [
-  { src: "/images/home/what-community.jpg", alt: "Community arts gathering", tall: true },
-  { src: "/images/home/what-mentorship.jpg", alt: "Mentorship session" },
-  { src: "/images/home/what-studio.jpg", alt: "Creative studio work" },
-  { src: "/images/home/what-podcast.jpg", alt: "Podcast recording" },
-  { src: "/images/home/what-audience.jpg", alt: "Audience at event" },
-];
-
 export function WhatIs() {
   return (
     <section className="bg-ink text-paper py-24" id="about">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <h2 className="font-extrabold text-[clamp(28px,3.4vw,42px)] leading-[1.12] tracking-tight">
-              What Is The
-              <br />
-              Witsprouts Project?
-            </h2>
+          <div className="relative overflow-hidden h-[320px] lg:h-[440px]">
+            <Image
+              src="/images/home/what-community.jpg"
+              alt="Community arts gathering"
+              fill
+              sizes="(min-width: 1024px) 50vw, 100vw"
+              className="object-cover"
+            />
           </div>
           <div>
+            <h2 className="font-extrabold text-[clamp(22px,2.2vw,28px)] leading-[1.15] tracking-tight mb-5">
+              What Is The Witsprouts Project?
+            </h2>
             <p className="text-[15.5px] leading-loose text-white/70 mb-[18px]">
               We believe arts and culture are not a luxury sitting outside
               development — they are development. A community that can tell
@@ -39,25 +36,6 @@ export function WhatIs() {
               Get Involved →
             </Button>
           </div>
-        </div>
-
-        <div className="grid grid-cols-2 gap-3 mt-14">
-          {images.map((img) => (
-            <div
-              key={img.src}
-              className={`relative overflow-hidden ${
-                img.tall ? "row-span-2 h-[318px]" : "h-[150px]"
-              }`}
-            >
-              <Image
-                src={img.src}
-                alt={img.alt}
-                fill
-                sizes="(min-width: 1024px) 25vw, 50vw"
-                className="object-cover"
-              />
-            </div>
-          ))}
         </div>
       </Container>
     </section>

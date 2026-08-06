@@ -11,7 +11,6 @@ import { PromoRow } from "@/components/home/PromoRow";
 import { WhatIs } from "@/components/home/WhatIs";
 import { Storytellers } from "@/components/home/Storytellers";
 import { Mission } from "@/components/home/Mission";
-import { HowWeServe } from "@/components/home/HowWeServe";
 import { Moments } from "@/components/home/Moments";
 import { News } from "@/components/home/News";
 import { PartnersRow } from "@/components/ui/PartnersRow";
@@ -68,7 +67,6 @@ export default function Home() {
         <WhatIs />
         <Storytellers />
         <Mission />
-        <HowWeServe />
         <Moments />
         <News />
         <section className="bg-mist py-24" id="partners">

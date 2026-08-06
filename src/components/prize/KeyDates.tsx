@@ -6,7 +6,7 @@ export function KeyDates() {
   return (
     <section className="py-[88px]" id="dates">
       <Container narrow>
-        <SectionHead eyebrow="Timeline" title="Key Dates" align="center" compact />
+        <SectionHead title="Key Dates" align="center" compact />
         <div className="timeline max-w-[600px] mx-auto">
           {timeline.map((item, i) => (
             <div

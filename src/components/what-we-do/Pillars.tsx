@@ -23,7 +23,7 @@ export function Pillars() {
   return (
     <section className="py-[88px]" id="pillars">
       <Container size="prize">
-        <SectionHead eyebrow="Strategy" title="Five Strategic Pillars" align="center" compact />
+        <SectionHead title="Five Strategic Pillars" align="center" compact />
 
         <div className="flex gap-2.5 mb-11 flex-wrap justify-center">
           {pillars.map((p) => (

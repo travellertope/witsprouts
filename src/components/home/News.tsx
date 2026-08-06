@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
-import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Button } from "@/components/ui/Button";
 import { news } from "@/lib/content/home";
 
@@ -11,8 +10,7 @@ export function News() {
       <Container>
         <div className="flex justify-between items-end flex-wrap gap-6 mb-11">
           <div>
-            <Eyebrow>News & Updates</Eyebrow>
-            <h2 className="font-extrabold text-[clamp(28px,3.4vw,42px)] leading-[1.12] tracking-tight mt-3">
+            <h2 className="font-extrabold text-[clamp(28px,3.4vw,42px)] leading-[1.12] tracking-tight">
               All The Latest From Across Witsprouts
             </h2>
           </div>

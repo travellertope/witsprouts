@@ -7,7 +7,6 @@ export function HowItWorked() {
     <section className="bg-mist py-20" id="how">
       <Container narrow>
         <SectionHead
-          eyebrow="How It Worked"
           title="Submission & Judging Process"
           align="center"
           compact

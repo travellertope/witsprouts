@@ -1,8 +1,6 @@
 import { ReactNode } from "react";
-import { Eyebrow } from "@/components/ui/Eyebrow";
 
 export function SectionHead({
-  eyebrow,
   title,
   description,
   align = "left",
@@ -10,7 +8,6 @@ export function SectionHead({
   compact = false,
   className = "",
 }: {
-  eyebrow: string;
   title: ReactNode;
   description?: ReactNode;
   align?: "left" | "center";
@@ -25,7 +22,6 @@ export function SectionHead({
         align === "center" ? "mx-auto text-center" : ""
       } ${className}`}
     >
-      <Eyebrow className={`mb-3 ${dark ? "text-white/60" : ""}`}>{eyebrow}</Eyebrow>
       <h2
         className={`font-extrabold tracking-tight leading-[1.12] ${
           compact ? "text-[clamp(26px,3.2vw,38px)]" : "text-[clamp(28px,3.4vw,42px)]"

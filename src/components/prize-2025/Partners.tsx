@@ -7,7 +7,6 @@ export function Partners() {
     <section className="bg-mist py-20" id="partners">
       <Container narrow>
         <SectionHead
-          eyebrow="2025 Partnering Organisations"
           title="Delivered Together With Three Partners"
           align="center"
           compact

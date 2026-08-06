@@ -7,7 +7,6 @@ export function Judges() {
     <section className="py-20" id="judges">
       <Container narrow>
         <SectionHead
-          eyebrow="The Judging Panel"
           title="Two of Nigeria's Foremost Voices"
           align="center"
           compact

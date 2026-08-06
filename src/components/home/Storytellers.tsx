@@ -9,7 +9,6 @@ export function Storytellers() {
     <section className="py-24" id="storytellers">
       <Container>
         <SectionHead
-          eyebrow="The Storytelling Prize"
           title="Meet Some Of Our Storytellers"
           description="Through the Witsprouts Storytelling Prize, we're building a growing community of storytellers, mentors, and judges working across Africa and the diaspora."
         />

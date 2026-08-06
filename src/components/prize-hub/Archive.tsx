@@ -8,7 +8,6 @@ export function Archive() {
     <section className="py-[88px]" id="archive">
       <Container size="prize">
         <SectionHead
-          eyebrow="The Archive"
           title="Past Editions"
           align="center"
           compact

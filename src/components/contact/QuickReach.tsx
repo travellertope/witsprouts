@@ -24,7 +24,6 @@ export function QuickReach() {
     <section className="py-20">
       <Container size="prize">
         <SectionHead
-          eyebrow="Quick Ways to Reach Us"
           title="Pick the Channel That Fits"
           align="center"
           compact

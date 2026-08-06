@@ -12,7 +12,6 @@ export function Eligibility() {
     <section className="py-[88px]">
       <Container narrow>
         <SectionHead
-          eyebrow="Eligibility"
           title="Who Can Be Nominated"
           align="center"
           compact

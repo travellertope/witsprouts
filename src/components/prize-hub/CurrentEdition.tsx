@@ -14,7 +14,7 @@ export function CurrentEdition() {
   return (
     <section className="bg-mist py-[88px]" id="current">
       <Container size="prize">
-        <SectionHead eyebrow="Right Now" title="The Current Edition" compact />
+        <SectionHead title="The Current Edition" compact />
         <div className="bg-ink text-paper p-9 md:p-14 grid grid-cols-1 md:grid-cols-[1.2fr_1fr] gap-12 items-center">
           <div>
             <div className="inline-flex items-center gap-2 text-xs tracking-[0.08em] uppercase font-bold text-blue">

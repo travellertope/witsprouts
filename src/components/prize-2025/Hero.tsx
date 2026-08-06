@@ -17,10 +17,6 @@ export function Hero() {
         size="prize"
         className="relative z-[2] h-full flex flex-col justify-center items-center text-center"
       >
-        <div className="text-white/90 mb-4 text-[13px] tracking-[0.1em] uppercase font-bold inline-flex items-center gap-2">
-          <span className="w-1.5 h-1.5 rounded-full bg-blue" />
-          1st Edition · 2025 · Archived
-        </div>
         <h1 className="text-white font-extrabold text-[clamp(32px,4.8vw,54px)] leading-[1.12] tracking-tight max-w-[720px]">
           The Inaugural Witsprouts Storytelling Prize
         </h1>

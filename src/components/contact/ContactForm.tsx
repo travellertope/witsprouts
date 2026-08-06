@@ -2,7 +2,6 @@
 
 import { useState, FormEvent } from "react";
 import { Container } from "@/components/ui/Container";
-import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Button } from "@/components/ui/Button";
 
 const locations = [
@@ -42,7 +41,6 @@ export function ContactForm() {
       <Container size="prize">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_1.2fr] gap-14 items-start">
           <div>
-            <Eyebrow className="text-white/55 mb-3.5">Where We Work</Eyebrow>
             <h2 className="font-extrabold text-[clamp(28px,3.6vw,40px)] leading-[1.12] tracking-tight">
               Based In Lagos &amp; Abuja
             </h2>

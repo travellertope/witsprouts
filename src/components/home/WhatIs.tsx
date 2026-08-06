@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Container } from "@/components/ui/Container";
-import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Button } from "@/components/ui/Button";
 
 const images = [
@@ -17,7 +16,6 @@ export function WhatIs() {
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <Eyebrow className="text-white/60 mb-4">Our Story</Eyebrow>
             <h2 className="font-extrabold text-[clamp(28px,3.4vw,42px)] leading-[1.12] tracking-tight">
               What Is The
               <br />

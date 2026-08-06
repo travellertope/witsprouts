@@ -11,7 +11,7 @@ export function Faq() {
   return (
     <section className="py-[88px]" id="faq">
       <Container narrow>
-        <SectionHead eyebrow="Questions" title="FAQ" align="center" compact />
+        <SectionHead title="FAQ" align="center" compact />
         <div>
           {faqs.map((item, i) => {
             const isOpen = openIndex === i;

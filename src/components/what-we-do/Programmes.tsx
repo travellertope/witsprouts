@@ -7,7 +7,6 @@ export function Programmes() {
     <section className="bg-mist py-[88px]" id="programmes">
       <Container size="prize">
         <SectionHead
-          eyebrow="Our Programmes"
           title="Eight Ways We Deliver On Our Pillars"
           align="center"
           compact

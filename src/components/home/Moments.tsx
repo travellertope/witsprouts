@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Container } from "@/components/ui/Container";
-import { Eyebrow } from "@/components/ui/Eyebrow";
 import { moments } from "@/lib/content/home";
 
 export function Moments() {
@@ -8,8 +7,7 @@ export function Moments() {
     <section className="bg-ink text-paper py-24">
       <Container>
         <div className="mb-11">
-          <Eyebrow className="text-white/60">Storytelling Moments</Eyebrow>
-          <h2 className="font-extrabold text-[clamp(28px,3.4vw,42px)] leading-[1.12] tracking-tight mt-3">
+          <h2 className="font-extrabold text-[clamp(28px,3.4vw,42px)] leading-[1.12] tracking-tight">
             Witsprouts Moments
           </h2>
         </div>

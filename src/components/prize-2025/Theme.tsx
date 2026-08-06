@@ -6,7 +6,6 @@ export function Theme() {
     <section className="py-20" id="theme">
       <Container narrow>
         <SectionHead
-          eyebrow="The Theme"
           title="Rebooting Legends and Memories"
           align="center"
           compact

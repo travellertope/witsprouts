@@ -1,11 +1,9 @@
 import { Container } from "@/components/ui/Container";
-import { Eyebrow } from "@/components/ui/Eyebrow";
 
 export function Mission() {
   return (
     <section className="bg-ink text-paper text-center py-[110px]" id="mission">
       <Container>
-        <Eyebrow className="text-white/60 mb-[18px]">Our Mission</Eyebrow>
         <h2 className="font-extrabold text-[clamp(28px,4vw,46px)] leading-[1.12] tracking-tight max-w-[780px] mx-auto">
           Culture knows no borders, and neither does our commitment to those
           who make it.

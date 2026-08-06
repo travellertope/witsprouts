@@ -43,7 +43,6 @@ export default function WhatWeDo() {
         <Programmes />
         <FinalCta
           size="prize"
-          eyebrow="Get Involved"
           title="Ready To Build Something Lasting?"
           description="Whether you're a creative seeking a platform, an organisation looking to partner, or a funder wanting to invest in African arts — we'd love to hear from you."
           primaryLabel="Get Involved →"

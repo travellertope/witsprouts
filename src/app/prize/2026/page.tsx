@@ -81,7 +81,6 @@ export default function Prize2026() {
         <Faq />
         <FinalCta
           size="prize"
-          eyebrow="Nominations Are Open"
           title="Know A Storyteller Worth Celebrating?"
           description="Nominations close September 30, 2026. Put them forward — or put yourself forward."
           primaryLabel="Nominate Now →"

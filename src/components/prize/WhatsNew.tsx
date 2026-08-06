@@ -16,7 +16,6 @@ export function WhatsNew() {
     <section className="bg-mist py-[88px]" id="whats-new">
       <Container narrow>
         <SectionHead
-          eyebrow="No Theme, Wider Scope"
           title="What's New In The 2nd Edition"
           align="center"
           compact

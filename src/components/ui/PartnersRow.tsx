@@ -16,7 +16,6 @@ export function PartnersRow({
   return (
     <Container narrow={narrow}>
       <SectionHead
-        eyebrow="Our Partners"
         title="Organisations We've Partnered With"
         description={note}
         align={align}

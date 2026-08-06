@@ -45,7 +45,6 @@ export default function PrizeHub() {
         <Archive />
         <FinalCta
           size="prize"
-          eyebrow="Nominations Are Open"
           title="Know A Storyteller Worth Celebrating?"
           description="The current edition is open for nominations now — no theme, every form of storytelling welcome."
           primaryLabel="Nominate Now →"

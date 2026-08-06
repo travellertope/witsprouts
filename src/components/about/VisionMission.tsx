@@ -1,13 +1,11 @@
 import { Container } from "@/components/ui/Container";
 import { SectionHead } from "@/components/ui/SectionHead";
-import { Eyebrow } from "@/components/ui/Eyebrow";
 
 export function VisionMission() {
   return (
     <section className="bg-ink text-paper py-24" id="mission">
       <Container size="prize">
         <SectionHead
-          eyebrow="Vision & Mission"
           title="What We're Working Toward"
           align="center"
           dark
@@ -15,7 +13,6 @@ export function VisionMission() {
         />
         <div className="grid grid-cols-1 md:grid-cols-[1fr_1px_1fr] gap-9 md:gap-0">
           <div className="md:pr-9">
-            <Eyebrow className="text-white/55 mb-3.5">Vision</Eyebrow>
             <h3 className="text-[clamp(22px,2.6vw,28px)] font-bold leading-snug">
               An Africa where every creative has the platform, skills, and
               community to turn their talent into a sustainable creative
@@ -24,7 +21,6 @@ export function VisionMission() {
           </div>
           <div className="hidden md:block bg-white/15" />
           <div className="md:pl-9">
-            <Eyebrow className="text-white/55 mb-3.5">Mission</Eyebrow>
             <h3 className="text-[19px] font-semibold leading-relaxed">
               To empower emerging African creatives and the communities
               around them through arts and culture programming that builds

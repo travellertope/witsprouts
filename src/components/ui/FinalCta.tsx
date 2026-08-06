@@ -1,9 +1,7 @@
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { Eyebrow } from "@/components/ui/Eyebrow";
 
 export function FinalCta({
-  eyebrow,
   title,
   description,
   primaryLabel,
@@ -15,7 +13,6 @@ export function FinalCta({
    * light section rather than another dark one. */
   topBorder = false,
 }: {
-  eyebrow: string;
   title: string;
   description: string;
   primaryLabel: string;
@@ -32,7 +29,6 @@ export function FinalCta({
       }`}
     >
       <Container size={size}>
-        <Eyebrow className="text-white/60 mb-4">{eyebrow}</Eyebrow>
         <h2 className="font-extrabold text-[clamp(28px,3.6vw,42px)] leading-[1.12] tracking-tight max-w-[640px] mx-auto">
           {title}
         </h2>

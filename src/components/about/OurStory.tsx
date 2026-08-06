@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Container } from "@/components/ui/Container";
-import { Eyebrow } from "@/components/ui/Eyebrow";
 
 const images = [
   { src: "/images/home/what-community.jpg", alt: "Community gathering", tall: true },
@@ -15,7 +14,6 @@ export function OurStory() {
       <Container size="prize">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
           <div>
-            <Eyebrow className="mb-4">Origin</Eyebrow>
             <h2 className="font-extrabold text-[clamp(28px,3.4vw,42px)] leading-[1.12] tracking-tight">
               Why Witsprouts
             </h2>

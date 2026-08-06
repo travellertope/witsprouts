@@ -3,7 +3,6 @@
 import { useState, useEffect, FormEvent } from "react";
 import { Container } from "@/components/ui/Container";
 import { SectionHead } from "@/components/ui/SectionHead";
-import { Eyebrow } from "@/components/ui/Eyebrow";
 import { Button } from "@/components/ui/Button";
 import { pathways, OpportunityTag } from "@/lib/content/getInvolved";
 
@@ -71,7 +70,6 @@ export function PathwaysAndForm() {
       <section className="py-[88px]" id="pathways">
         <Container size="prize">
           <SectionHead
-            eyebrow="Pathways"
             title="How Would You Like To Get Involved?"
             align="center"
             compact
@@ -118,7 +116,6 @@ export function PathwaysAndForm() {
             </div>
 
             <div className="bg-paper border border-line p-[26px]">
-              <Eyebrow className="mb-2.5">Expression of Interest</Eyebrow>
               <p className="text-sm text-ink-soft leading-relaxed mb-[18px]">
                 Use the form below and select &ldquo;{active.title}&rdquo; as your
                 pathway. We&apos;ll ask for a couple of extra details specific to
@@ -147,7 +144,6 @@ export function PathwaysAndForm() {
         <Container size="prize">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
             <div>
-              <Eyebrow className="text-white/55 mb-3.5">One Form, Six Pathways</Eyebrow>
               <h2 className="font-extrabold text-[clamp(28px,3.6vw,40px)] leading-[1.12] tracking-tight">
                 Tell Us How You&apos;d Like To Build With Us
               </h2>

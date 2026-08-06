@@ -24,7 +24,6 @@ export function AceFramework() {
     <section className="py-[88px]" id="ace">
       <Container size="prize">
         <SectionHead
-          eyebrow="Our Culture"
           title="The ACE Framework"
           align="center"
           compact

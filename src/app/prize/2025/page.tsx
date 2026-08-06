@@ -60,7 +60,6 @@ export default function Prize2025() {
         <FinalCta
           size="prize"
           topBorder
-          eyebrow="This Edition Has Concluded"
           title="See What's Happening In The Current Edition"
           description="Nominations for the 2nd edition are open now — no theme, wider scope, open to all forms of storytelling."
           primaryLabel="Go to the 2026 Prize →"

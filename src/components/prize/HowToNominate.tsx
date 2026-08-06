@@ -8,7 +8,6 @@ export function HowToNominate() {
     <section className="bg-mist py-[88px]" id="nominate">
       <Container narrow>
         <SectionHead
-          eyebrow="The Process"
           title="How Nominations Work"
           align="center"
           compact

@@ -6,7 +6,6 @@ export function About() {
     <section className="py-[88px]" id="about">
       <Container narrow>
         <SectionHead
-          eyebrow="Why This Prize Exists"
           title="Making Sure The Storytellers Are Seen"
           align="center"
           compact

@@ -15,9 +15,6 @@ export function Hero() {
       />
       <div className="hero-scrim-bottom absolute inset-0" />
       <Container className="relative z-[2] h-full flex flex-col justify-end pb-14">
-        <div className="text-white/85 mb-3.5 text-[13px] tracking-[0.12em] uppercase font-bold">
-          The Witsprouts Project
-        </div>
         <h1 className="text-white font-extrabold text-[clamp(38px,5.6vw,64px)] leading-[1.12] tracking-tight max-w-[720px]">
           Where Culture
           <br />

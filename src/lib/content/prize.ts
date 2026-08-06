@@ -1,6 +1,11 @@
 // Placeholder content for the 2026 Storytelling Prize page.
 // Swap for a WordPress "Prize Edition" query once the CMS is connected.
 
+// The nomination form itself lives on Google Forms. This short URL is set
+// up to redirect there (see next.config.ts) so it stays memorable/brandable
+// and can be repointed without touching every CTA on the site.
+export const nominationFormUrl = "https://www.witsprouts.org/2026prize";
+
 export const prize2026 = {
   edition: "2nd Edition",
   purse: "₦500,000",
@@ -32,7 +37,7 @@ export const steps = [
   },
   {
     title: "Fill out the nomination form",
-    body: "Scroll down to the nomination form on this page, or jump straight to it below.",
+    body: "Head to witsprouts.org/2026prize — it takes you straight to the nomination form.",
   },
   {
     title: "Submit before the deadline",

@@ -1,7 +1,7 @@
 import { Container } from "@/components/ui/Container";
 import { SectionHead } from "@/components/ui/SectionHead";
 import { Button } from "@/components/ui/Button";
-import { steps } from "@/lib/content/prize";
+import { steps, nominationFormUrl } from "@/lib/content/prize";
 
 export function HowToNominate() {
   return (
@@ -29,7 +29,7 @@ export function HowToNominate() {
           ))}
         </div>
         <div className="text-center mt-9">
-          <Button href="#nominate-form" variant="blue">
+          <Button href={nominationFormUrl} variant="blue">
             Nominate a Storyteller →
           </Button>
         </div>

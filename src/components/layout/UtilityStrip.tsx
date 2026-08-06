@@ -14,7 +14,7 @@ export function UtilityStrip({
   return (
     <div className="bg-ink text-white/65">
       <Container size={size}>
-        <div className="flex items-center justify-between py-2.5 text-xs gap-4">
+        <div className="flex items-center justify-between py-1.5 text-xs gap-4">
           <div className="min-w-0 overflow-x-auto whitespace-nowrap [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             {left}
           </div>

@@ -9,13 +9,12 @@ import { About } from "@/components/prize/About";
 import { WhatsNew } from "@/components/prize/WhatsNew";
 import { Eligibility } from "@/components/prize/Eligibility";
 import { HowToNominate } from "@/components/prize/HowToNominate";
-import { NominationForm } from "@/components/prize/NominationForm";
 import { KeyDates } from "@/components/prize/KeyDates";
 import { Judges } from "@/components/prize/Judges";
 import { Spotlight } from "@/components/prize/Spotlight";
 import { Faq } from "@/components/prize/Faq";
 import { FinalCta } from "@/components/ui/FinalCta";
-import { prize2026 } from "@/lib/content/prize";
+import { prize2026, nominationFormUrl } from "@/lib/content/prize";
 
 const partners2025 = [
   { name: "Hill-Top Creative Arts Foundation", tag: "2025 Edition Partner" },
@@ -51,7 +50,7 @@ export default function Prize2026() {
           { label: "FAQ", href: "#faq" },
         ]}
         ctaLabel="Nominate a Storyteller"
-        ctaHref="#nominate-form"
+        ctaHref={nominationFormUrl}
       />
 
       <main className="flex-1">
@@ -68,7 +67,6 @@ export default function Prize2026() {
         <WhatsNew />
         <Eligibility />
         <HowToNominate />
-        <NominationForm />
         <KeyDates />
         <section className="bg-mist py-[88px]">
           <PartnersRow
@@ -87,7 +85,7 @@ export default function Prize2026() {
           title="Know A Storyteller Worth Celebrating?"
           description="Nominations close September 30, 2026. Put them forward — or put yourself forward."
           primaryLabel="Nominate Now →"
-          primaryHref="#nominate-form"
+          primaryHref={nominationFormUrl}
           secondaryLabel="Questions? Email Us"
           secondaryHref="mailto:prize@witsprouts.org"
         />

@@ -1,6 +1,7 @@
 import { Container } from "@/components/ui/Container";
 import { SectionHead } from "@/components/ui/SectionHead";
 import { Button } from "@/components/ui/Button";
+import { nominationFormUrl } from "@/lib/content/prize";
 
 const atAGlance = [
   { label: "Theme", value: "None — open scope" },
@@ -46,7 +47,7 @@ export function CurrentEdition() {
               <Button href="/prize/2026" variant="blue">
                 Visit the 2026 Edition →
               </Button>
-              <Button href="/prize/2026#nominate-form" variant="white">
+              <Button href={nominationFormUrl} variant="white">
                 Nominate a Storyteller
               </Button>
             </div>

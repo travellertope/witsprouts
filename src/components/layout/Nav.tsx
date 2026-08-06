@@ -25,7 +25,7 @@ export function Nav({
 
   return (
     <Container size={size}>
-      <nav className="flex items-center justify-between py-5 border-b border-line gap-4">
+      <nav className="flex items-center justify-between py-3.5 border-b border-line gap-4">
         <Logo href={logoHref} size={size} />
         <div className="hidden md:flex gap-7 text-sm font-medium">
           {links.map((link) => (
@@ -76,7 +76,7 @@ export function Nav({
       </nav>
 
       {open && (
-        <div className="md:hidden border-b border-line py-4 flex flex-col gap-1">
+        <div className="md:hidden border-b border-line py-3 flex flex-col gap-1">
           {links.map((link) => (
             <Link
               key={link.href}

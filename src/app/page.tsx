@@ -50,7 +50,7 @@ export default function Home() {
           { label: "Storytellers", href: "#storytellers" },
           { label: "Impact", href: "#mission" },
           { label: "Partners", href: "#partners" },
-          { label: "Contact", href: "#contact" },
+          { label: "Contact", href: "/contact" },
         ]}
         ctaLabel="Nominate a Storyteller"
         ctaHref="/prize/2026"
@@ -118,6 +118,13 @@ export default function Home() {
               { label: "Witsprouts Bookstack", href: "https://bookstack.witsprouts.com" },
               { label: "Storyrat", href: "https://storyrat.witsprouts.com" },
               { label: "The Moveee", href: "https://themoveee.com" },
+            ],
+          },
+          {
+            title: "Contact",
+            links: [
+              { label: "Get in Touch", href: "/contact" },
+              { label: "info@witsprouts.org", href: "mailto:info@witsprouts.org" },
             ],
           },
         ]}

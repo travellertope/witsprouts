@@ -29,7 +29,7 @@ export default function GetInvolved() {
           { label: "What We Do", href: "/what-we-do" },
           { label: "Get Involved", href: "/get-involved", current: true },
           { label: "Partners", href: "/#partners" },
-          { label: "Contact", href: "/#contact" },
+          { label: "Contact", href: "/contact" },
         ]}
         ctaLabel="Find Your Pathway"
         ctaHref="#pathways"

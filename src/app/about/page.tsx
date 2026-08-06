@@ -30,7 +30,7 @@ export default function About() {
           { label: "What We Do", href: "/what-we-do" },
           { label: "Get Involved", href: "/get-involved" },
           { label: "Partners", href: "/#partners" },
-          { label: "Contact", href: "/#contact" },
+          { label: "Contact", href: "/contact" },
         ]}
         ctaLabel="Get Involved"
         ctaHref="/get-involved"

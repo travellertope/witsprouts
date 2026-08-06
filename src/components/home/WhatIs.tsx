@@ -37,7 +37,7 @@ export function WhatIs() {
               model that can travel — first across Nigeria, then across West
               Africa, and outward to the wider African diaspora.
             </p>
-            <Button href="#contact" variant="white" className="mt-2">
+            <Button href="/get-involved" variant="white" className="mt-2">
               Get Involved →
             </Button>
           </div>

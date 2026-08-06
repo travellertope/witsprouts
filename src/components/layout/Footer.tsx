@@ -8,6 +8,16 @@ export type FooterColumn = {
   links: { label: string; href: string }[];
 };
 
+// CSS Grid's `auto-fit` doesn't reliably fill available width when mixed
+// with a fixed `1.3fr` first track — it under-counts tracks and leaves the
+// row half-empty. Using an explicit template per column count avoids that.
+const LG_GRID_TEMPLATE: Record<number, string> = {
+  2: "lg:grid-cols-[1.3fr_1fr_1fr]",
+  3: "lg:grid-cols-[1.3fr_1fr_1fr_1fr]",
+  4: "lg:grid-cols-[1.3fr_1fr_1fr_1fr_1fr]",
+  5: "lg:grid-cols-[1.3fr_1fr_1fr_1fr_1fr_1fr]",
+};
+
 export function Footer({
   tagline,
   columns,
@@ -34,11 +44,12 @@ export function Footer({
   bottomDivider?: boolean;
 }) {
   const compact = size === "prize";
+  const lgGrid = LG_GRID_TEMPLATE[columns.length] ?? "lg:grid-cols-[1.3fr_repeat(auto-fit,minmax(120px,1fr))]";
   return (
     <footer className={`bg-ink text-white/70 ${compact ? "pt-12" : "pt-14"}`}>
       <Container size={size}>
         <div
-          className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.3fr_repeat(auto-fit,minmax(120px,1fr))] gap-8 pb-11 ${
+          className={`grid grid-cols-1 md:grid-cols-2 ${lgGrid} gap-8 pb-11 ${
             bottomDivider ? "border-b border-white/12" : ""
           } ${topDivider ? "border-t pt-12" : ""}`}
         >

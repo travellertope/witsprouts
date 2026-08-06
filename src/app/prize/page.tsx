@@ -29,10 +29,11 @@ export default function PrizeHub() {
       <Nav
         size="prize"
         links={[
-          { label: "About the Prize", href: "#about" },
-          { label: "Current Edition", href: "#current" },
-          { label: "Past Editions", href: "#archive" },
+          { label: "About", href: "/about" },
+          { label: "What We Do", href: "/what-we-do" },
+          { label: "Storytelling Prize", href: "/prize", current: true },
           { label: "Get Involved", href: "/get-involved" },
+          { label: "Contact", href: "/contact" },
         ]}
         ctaLabel="Nominate a Storyteller"
         ctaHref="/prize/2026"

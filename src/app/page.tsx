@@ -47,9 +47,8 @@ export default function Home() {
         links={[
           { label: "About", href: "/about" },
           { label: "What We Do", href: "/what-we-do" },
-          { label: "Storytellers", href: "#storytellers" },
-          { label: "Impact", href: "#mission" },
-          { label: "Partners", href: "#partners" },
+          { label: "Storytelling Prize", href: "/prize" },
+          { label: "Get Involved", href: "/get-involved" },
           { label: "Contact", href: "/contact" },
         ]}
         ctaLabel="Nominate a Storyteller"
@@ -91,6 +90,7 @@ export default function Home() {
               { label: "Our Story", href: "/about#story" },
               { label: "Vision & Mission", href: "/about#mission" },
               { label: "The ACE Framework", href: "/about#ace" },
+              { label: "Get in Touch", href: "/contact" },
             ],
           },
           {
@@ -99,13 +99,13 @@ export default function Home() {
               { label: "Arts & Culture Engagement", href: "/what-we-do#p1" },
               { label: "Talent Development", href: "/what-we-do#p2" },
               { label: "Community & Inclusion", href: "/what-we-do#p3" },
-              { label: "Sustainable Enterprise", href: "/what-we-do#p5" },
+              { label: "Amplifying Marginalised Voices", href: "/what-we-do#p4" },
             ],
           },
           {
             title: "Get Involved",
             links: [
-              { label: "Nominate a Storyteller", href: "/prize/2026" },
+              { label: "Storytelling Prize", href: "/prize" },
               { label: "Become a Mentor", href: "/get-involved#mentor" },
               { label: "Partner With Us", href: "/get-involved#org" },
               { label: "Volunteer", href: "/get-involved#volunteer" },
@@ -118,13 +118,6 @@ export default function Home() {
               { label: "Witsprouts Bookstack", href: "https://bookstack.witsprouts.com" },
               { label: "Storyrat", href: "https://storyrat.witsprouts.com" },
               { label: "The Moveee", href: "https://themoveee.com" },
-            ],
-          },
-          {
-            title: "Contact",
-            links: [
-              { label: "Get in Touch", href: "/contact" },
-              { label: "info@witsprouts.org", href: "mailto:info@witsprouts.org" },
             ],
           },
         ]}

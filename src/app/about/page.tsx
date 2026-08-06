@@ -28,8 +28,8 @@ export default function About() {
         links={[
           { label: "About", href: "/about", current: true },
           { label: "What We Do", href: "/what-we-do" },
+          { label: "Storytelling Prize", href: "/prize" },
           { label: "Get Involved", href: "/get-involved" },
-          { label: "Partners", href: "/#partners" },
           { label: "Contact", href: "/contact" },
         ]}
         ctaLabel="Get Involved"
@@ -68,6 +68,7 @@ export default function About() {
             title: "Explore",
             links: [
               { label: "What We Do", href: "/what-we-do" },
+              { label: "Storytelling Prize", href: "/prize" },
               { label: "Get Involved", href: "/get-involved" },
               { label: "Partners", href: "/#partners" },
             ],

@@ -28,7 +28,7 @@ export default function Prize2025() {
           <Breadcrumb
             items={[
               { label: "The Witsprouts Project", href: "/" },
-              { label: "Storytelling Prize", href: "/prize/2026" },
+              { label: "Storytelling Prize", href: "/prize" },
               { label: "2025 Archive" },
             ]}
           />
@@ -81,12 +81,16 @@ export default function Prize2025() {
               { label: "The Theme", href: "#theme" },
               { label: "How It Worked", href: "#how" },
               { label: "Judges", href: "#judges" },
+              { label: "Partners", href: "#partners" },
               { label: "The Winner", href: "#winner" },
             ],
           },
           {
             title: "Prize",
-            links: [{ label: "Current Edition (2026)", href: "/prize/2026" }],
+            links: [
+              { label: "Storytelling Prize Hub", href: "/prize" },
+              { label: "Current Edition (2026)", href: "/prize/2026" },
+            ],
           },
           {
             title: "Contact",

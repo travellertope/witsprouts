@@ -29,8 +29,8 @@ export default function WhatWeDo() {
         links={[
           { label: "About", href: "/about" },
           { label: "What We Do", href: "/what-we-do", current: true },
+          { label: "Storytelling Prize", href: "/prize" },
           { label: "Get Involved", href: "/get-involved" },
-          { label: "Partners", href: "/#partners" },
           { label: "Contact", href: "/contact" },
         ]}
         ctaLabel="Get Involved"
@@ -70,6 +70,7 @@ export default function WhatWeDo() {
             title: "Explore",
             links: [
               { label: "About", href: "/about" },
+              { label: "Storytelling Prize", href: "/prize" },
               { label: "Get Involved", href: "/get-involved" },
               { label: "Partners", href: "/#partners" },
             ],

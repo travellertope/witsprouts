@@ -27,8 +27,8 @@ export default function GetInvolved() {
         links={[
           { label: "About", href: "/about" },
           { label: "What We Do", href: "/what-we-do" },
+          { label: "Storytelling Prize", href: "/prize" },
           { label: "Get Involved", href: "/get-involved", current: true },
-          { label: "Partners", href: "/#partners" },
           { label: "Contact", href: "/contact" },
         ]}
         ctaLabel="Find Your Pathway"
@@ -58,6 +58,7 @@ export default function GetInvolved() {
             links: [
               { label: "About", href: "/about" },
               { label: "What We Do", href: "/what-we-do" },
+              { label: "Storytelling Prize", href: "/prize" },
               { label: "Partners", href: "/#partners" },
             ],
           },

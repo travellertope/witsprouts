@@ -26,8 +26,8 @@ export default function Contact() {
         links={[
           { label: "About", href: "/about" },
           { label: "What We Do", href: "/what-we-do" },
+          { label: "Storytelling Prize", href: "/prize" },
           { label: "Get Involved", href: "/get-involved" },
-          { label: "Partners", href: "/#partners" },
           { label: "Contact", href: "/contact", current: true },
         ]}
         ctaLabel="Send a Message"
@@ -51,6 +51,7 @@ export default function Contact() {
             links: [
               { label: "About", href: "/about" },
               { label: "What We Do", href: "/what-we-do" },
+              { label: "Storytelling Prize", href: "/prize" },
               { label: "Get Involved", href: "/get-involved" },
               { label: "Partners", href: "/#partners" },
             ],

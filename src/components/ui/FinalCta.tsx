@@ -11,6 +11,9 @@ export function FinalCta({
   secondaryLabel,
   secondaryHref,
   size = "default",
+  /** Subtle divider above the section, for pages where it follows a
+   * light section rather than another dark one. */
+  topBorder = false,
 }: {
   eyebrow: string;
   title: string;
@@ -20,9 +23,14 @@ export function FinalCta({
   secondaryLabel: string;
   secondaryHref: string;
   size?: "default" | "prize";
+  topBorder?: boolean;
 }) {
   return (
-    <section className="bg-ink text-paper text-center py-[88px]">
+    <section
+      className={`bg-ink text-paper text-center py-[88px] ${
+        topBorder ? "border-t border-white/10" : ""
+      }`}
+    >
       <Container size={size}>
         <Eyebrow className="text-white/60 mb-4">{eyebrow}</Eyebrow>
         <h2 className="font-extrabold text-[clamp(28px,3.6vw,42px)] leading-[1.12] tracking-tight max-w-[640px] mx-auto">

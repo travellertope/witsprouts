@@ -110,6 +110,20 @@ body {
   overflow: hidden;
 }
 
+/* Prize hub: pulsing "live" dot on the current edition card */
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+.pulse-dot {
+  animation: pulse-dot 1.6s infinite;
+}
+
 /* Moments carousel scrollbar */
 .moments-scroller {
   scrollbar-width: thin;

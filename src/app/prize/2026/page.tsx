@@ -110,8 +110,8 @@ export default function Prize2026() {
             title: "Archive",
             links: [
               { label: "2025 Edition Hub", href: "/prize/2025" },
-              { label: "2025 Judges", href: "/prize/2025/judges" },
-              { label: "2025 Winner", href: "#spotlight" },
+              { label: "2025 Judges", href: "/prize/2025#judges" },
+              { label: "2025 Winner", href: "/prize/2025#winner" },
             ],
           },
           {

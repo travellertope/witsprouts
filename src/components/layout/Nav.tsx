@@ -6,7 +6,7 @@ import { Container } from "@/components/ui/Container";
 import { Logo } from "@/components/ui/Logo";
 import { Button } from "@/components/ui/Button";
 
-export type NavLink = { label: string; href: string };
+export type NavLink = { label: string; href: string; current?: boolean };
 
 export function Nav({
   links,
@@ -29,9 +29,17 @@ export function Nav({
         <Logo href={logoHref} size={size} />
         <div className="hidden md:flex gap-7 text-sm font-medium">
           {links.map((link) => (
-            <Link key={link.href} href={link.href} className="relative py-1 group">
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`relative py-1 group ${link.current ? "text-blue" : ""}`}
+            >
               {link.label}
-              <span className="absolute left-0 -bottom-0.5 h-0.5 w-0 bg-blue transition-all duration-200 group-hover:w-full" />
+              <span
+                className={`absolute left-0 -bottom-0.5 h-0.5 bg-blue transition-all duration-200 group-hover:w-full ${
+                  link.current ? "w-full" : "w-0"
+                }`}
+              />
             </Link>
           ))}
         </div>
@@ -74,7 +82,7 @@ export function Nav({
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="py-2.5 text-[15px] font-medium"
+              className={`py-2.5 text-[15px] font-medium ${link.current ? "text-blue" : ""}`}
             >
               {link.label}
             </Link>

@@ -14,7 +14,7 @@ import { KeyDates } from "@/components/prize/KeyDates";
 import { Judges } from "@/components/prize/Judges";
 import { Spotlight } from "@/components/prize/Spotlight";
 import { Faq } from "@/components/prize/Faq";
-import { FinalCta } from "@/components/prize/FinalCta";
+import { FinalCta } from "@/components/ui/FinalCta";
 import { prize2026 } from "@/lib/content/prize";
 
 const partners2025 = [
@@ -81,7 +81,16 @@ export default function Prize2026() {
         <Judges />
         <Spotlight />
         <Faq />
-        <FinalCta />
+        <FinalCta
+          size="prize"
+          eyebrow="Nominations Are Open"
+          title="Know A Storyteller Worth Celebrating?"
+          description="Nominations close September 30, 2026. Put them forward — or put yourself forward."
+          primaryLabel="Nominate Now →"
+          primaryHref="#nominate-form"
+          secondaryLabel="Questions? Email Us"
+          secondaryHref="mailto:prize@witsprouts.org"
+        />
       </main>
 
       <Footer

@@ -45,7 +45,7 @@ export default function Home() {
 
       <Nav
         links={[
-          { label: "About", href: "#about" },
+          { label: "About", href: "/about" },
           { label: "What We Do", href: "#what-we-do" },
           { label: "Storytellers", href: "#storytellers" },
           { label: "Impact", href: "#mission" },
@@ -88,10 +88,9 @@ export default function Home() {
           {
             title: "About",
             links: [
-              { label: "Our Story", href: "#about" },
-              { label: "Vision & Mission", href: "#mission" },
-              { label: "The ACE Framework", href: "#what-we-do" },
-              { label: "Governance", href: "#" },
+              { label: "Our Story", href: "/about#story" },
+              { label: "Vision & Mission", href: "/about#mission" },
+              { label: "The ACE Framework", href: "/about#ace" },
             ],
           },
           {

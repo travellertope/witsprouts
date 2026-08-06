@@ -106,9 +106,9 @@ export default function Home() {
             title: "Get Involved",
             links: [
               { label: "Nominate a Storyteller", href: "/prize/2026" },
-              { label: "Become a Mentor", href: "#" },
-              { label: "Partner With Us", href: "#partners" },
-              { label: "Volunteer", href: "#" },
+              { label: "Become a Mentor", href: "/get-involved#mentor" },
+              { label: "Partner With Us", href: "/get-involved#org" },
+              { label: "Volunteer", href: "/get-involved#volunteer" },
             ],
           },
           {

@@ -1,4 +1,3 @@
-import { BrandBar } from "@/components/ui/BrandBar";
 import { Nav } from "@/components/layout/Nav";
 import {
   UtilityStrip,
@@ -6,6 +5,7 @@ import {
   SocialIcons,
 } from "@/components/layout/UtilityStrip";
 import { Footer } from "@/components/layout/Footer";
+import { StatStrip } from "@/components/ui/StatStrip";
 import { Hero } from "@/components/home/Hero";
 import { PromoRow } from "@/components/home/PromoRow";
 import { WhatIs } from "@/components/home/WhatIs";
@@ -21,8 +21,6 @@ import { partners } from "@/lib/content/home";
 export default function Home() {
   return (
     <>
-      <BrandBar />
-
       <UtilityStrip
         left={
           <FamilyLinks
@@ -60,6 +58,13 @@ export default function Home() {
 
       <main className="flex-1">
         <Hero />
+        <StatStrip
+          stats={[
+            { num: "₦500K", label: "Storytelling Prize" },
+            { num: "6", label: "SDGs Aligned" },
+            { num: "3", label: "2025 Partners" },
+          ]}
+        />
         <PromoRow />
         <WhatIs />
         <Storytellers />
@@ -67,7 +72,7 @@ export default function Home() {
         <HowWeServe />
         <Moments />
         <News />
-        <section className="bg-mist py-[104px]" id="partners">
+        <section className="bg-mist py-24" id="partners">
           <PartnersRow
             partners={partners}
             note="Partners on past editions and programmes — not standing sponsors, but collaborators who've lent their expertise along the way."
@@ -77,6 +82,7 @@ export default function Home() {
       </main>
 
       <Footer
+        topDivider
         tagline="To foster a deeper engagement in African arts and culture."
         columns={[
           {

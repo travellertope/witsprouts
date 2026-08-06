@@ -3,28 +3,29 @@ import { SectionHead } from "@/components/ui/SectionHead";
 
 export function About() {
   return (
-    <section className="py-24" id="about">
+    <section className="py-[88px]" id="about">
       <Container narrow>
         <SectionHead
           eyebrow="Why This Prize Exists"
           title="Making Sure The Storytellers Are Seen"
           align="center"
+          compact
         />
-        <p className="text-base leading-loose text-ink-soft">
+        <p className="text-[15.5px] leading-loose text-ink-soft">
           The Witsprouts Storytelling Prize was launched to acknowledge and
           amplify the voices of storytellers who are reinventing the way
           stories are told. It exists to revive the art of oral storytelling
           while celebrating and rewarding exceptional storytelling talent.
         </p>
-        <p className="text-base leading-loose text-ink-soft mt-4">
+        <p className="text-[15.5px] leading-loose text-ink-soft mt-4">
           The inaugural 2025 edition centred on the theme &ldquo;Rebooting
           Legends and Memories,&rdquo; calling on Nigerian artists and
           creatives to reimagine traditional African oral storytelling for
           today&apos;s digital platforms through original 5–10 minute
           theatrical video performances.
         </p>
-        <blockquote className="border-l-2 border-blue pl-[22px] my-7">
-          <p className="font-display text-lg leading-snug font-medium">
+        <blockquote className="border-l-2 border-blue pl-5 my-[26px]">
+          <p className="text-lg leading-snug font-semibold">
             &ldquo;Storytelling is one of the most powerful tools we have, and
             it is evolving. Contemporary griots, creative podcasters, spoken
             word artists, animators, voice-over artists, and everyone
@@ -33,7 +34,7 @@ export function About() {
             make sure those voices are encouraged, celebrated, and
             supported.&rdquo;
           </p>
-          <cite className="block mt-3.5 font-mono text-[11px] tracking-[0.05em] uppercase text-ink-soft not-italic">
+          <cite className="block mt-3 text-xs tracking-[0.02em] uppercase font-semibold text-ink-soft not-italic">
             Tope Akintayo, Director, The Witsprouts Project
           </cite>
         </blockquote>

@@ -13,20 +13,21 @@ function Item({ label, children }: { label: string; children: React.ReactNode })
 
 export function WhatsNew() {
   return (
-    <section className="bg-mist py-24" id="whats-new">
+    <section className="bg-mist py-[88px]" id="whats-new">
       <Container narrow>
         <SectionHead
           eyebrow="No Theme, Wider Scope"
           title="What's New In The 2nd Edition"
           align="center"
-          description="With this second edition, The Witsprouts Project is expanding its scope — honouring storytellers in all forms of oral and multimedia storytelling. There's no set theme this year. We're simply seeking storytellers doing the work of making stories matter."
+          compact
+          description="With this second edition, The Witsprouts Project is expanding its scope — honouring storytellers in all forms of oral and multimedia storytelling. There's no set theme this year."
         />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="border-[1.5px] border-line rounded-md p-8">
-            <div className="font-mono text-[11px] tracking-[0.08em] uppercase font-semibold text-ink-soft">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-[22px]">
+          <div className="border-[1.5px] border-line p-[30px]">
+            <div className="text-[11px] tracking-[0.06em] uppercase font-bold text-ink-soft">
               2025 · 1st Edition
             </div>
-            <h3 className="font-display text-xl mt-2.5 mb-5">
+            <h3 className="text-[19px] font-bold mt-2.5 mb-[18px]">
               Rebooting Legends and Memories
             </h3>
             <ul className="text-ink-soft">
@@ -35,13 +36,11 @@ export function WhatsNew() {
               <Item label="Entry model">self-submission via Instagram</Item>
             </ul>
           </div>
-          <div className="border-[1.5px] border-blue rounded-md p-8 bg-blue/4">
-            <div className="font-mono text-[11px] tracking-[0.08em] uppercase font-semibold text-blue">
+          <div className="border-[1.5px] border-blue p-[30px] bg-blue/4">
+            <div className="text-[11px] tracking-[0.06em] uppercase font-bold text-blue">
               2026 · 2nd Edition
             </div>
-            <h3 className="font-display text-xl mt-2.5 mb-5">
-              Open Scope, No Theme
-            </h3>
+            <h3 className="text-[19px] font-bold mt-2.5 mb-[18px]">Open Scope, No Theme</h3>
             <ul>
               <Item label="Format">
                 podcasts, spoken word, animation, audio drama, video, and more

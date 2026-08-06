@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { Eyebrow } from "@/components/ui/Eyebrow";
 
 export function SectionHead({
   eyebrow,
@@ -6,6 +7,7 @@ export function SectionHead({
   description,
   align = "left",
   dark = false,
+  compact = false,
   className = "",
 }: {
   eyebrow: string;
@@ -13,24 +15,28 @@ export function SectionHead({
   description?: ReactNode;
   align?: "left" | "center";
   dark?: boolean;
+  /** Slightly smaller heading scale, used on the prize page. */
+  compact?: boolean;
   className?: string;
 }) {
   return (
     <div
-      className={`max-w-[640px] mb-14 ${
+      className={`max-w-[640px] mb-12 ${
         align === "center" ? "mx-auto text-center" : ""
       } ${className}`}
     >
-      <div className="font-mono text-[11px] tracking-[0.16em] uppercase font-semibold text-blue mb-3.5">
-        {eyebrow}
-      </div>
-      <h2 className="font-display font-bold text-[clamp(28px,3.6vw,46px)] leading-[1.08] tracking-tight">
+      <Eyebrow className={`mb-3 ${dark ? "text-white/60" : ""}`}>{eyebrow}</Eyebrow>
+      <h2
+        className={`font-extrabold tracking-tight leading-[1.12] ${
+          compact ? "text-[clamp(26px,3.2vw,38px)]" : "text-[clamp(28px,3.4vw,42px)]"
+        }`}
+      >
         {title}
       </h2>
       {description && (
         <p
-          className={`mt-4 text-base leading-relaxed ${
-            dark ? "text-white/68" : "text-ink-soft"
+          className={`mt-3.5 text-base leading-relaxed ${
+            dark ? "text-white/65" : "text-ink-soft"
           }`}
         >
           {description}

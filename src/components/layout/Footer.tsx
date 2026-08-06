@@ -2,7 +2,6 @@ import Link from "next/link";
 import { ReactNode } from "react";
 import { Container } from "@/components/ui/Container";
 import { Logo } from "@/components/ui/Logo";
-import { BrandBar } from "@/components/ui/BrandBar";
 
 export type FooterColumn = {
   title: string;
@@ -16,6 +15,10 @@ export function Footer({
   bottomLinks = [],
   bottomRight,
   size = "default",
+  /** Extra divider above the columns block, for pages where the footer
+   * sits directly beneath another dark section (e.g. the homepage
+   * newsletter band) and needs a visual seam. */
+  topDivider = false,
 }: {
   tagline: string;
   columns: FooterColumn[];
@@ -23,28 +26,33 @@ export function Footer({
   bottomLinks?: { label: string; href: string }[];
   bottomRight?: ReactNode;
   size?: "default" | "prize";
+  topDivider?: boolean;
 }) {
   const compact = size === "prize";
   return (
-    <footer className={`bg-paper ${compact ? "pt-16" : "pt-20"}`}>
+    <footer className={`bg-ink text-white/70 ${compact ? "pt-12" : "pt-14"}`}>
       <Container size={size}>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.3fr_repeat(auto-fit,minmax(120px,1fr))] gap-8 pb-16 border-b border-line">
+        <div
+          className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.3fr_repeat(auto-fit,minmax(120px,1fr))] gap-8 pb-11 border-b border-white/12 ${
+            topDivider ? "border-t pt-12" : ""
+          }`}
+        >
           <div>
             <div className="mb-4">
-              <Logo />
+              <Logo className="text-white" />
             </div>
-            <p className="text-sm text-ink-soft leading-relaxed max-w-[240px]">
+            <p className="text-[13.5px] text-white/55 leading-relaxed max-w-[260px]">
               {tagline}
             </p>
           </div>
           {columns.map((col) => (
             <div key={col.title}>
-              <h4 className="font-mono text-[11px] tracking-[0.08em] uppercase mb-[18px] text-ink-soft">
+              <h4 className="text-[11.5px] tracking-[0.05em] uppercase font-bold mb-3.5 text-white/45">
                 {col.title}
               </h4>
-              <ul className="space-y-3">
+              <ul className="space-y-2.5">
                 {col.links.map((link) => (
-                  <li key={link.label} className="text-sm">
+                  <li key={link.label} className="text-[13.5px]">
                     <a href={link.href} className="hover:text-blue">
                       {link.label}
                     </a>
@@ -54,10 +62,10 @@ export function Footer({
             </div>
           ))}
         </div>
-        <div className="py-6 flex justify-between items-center flex-wrap gap-3">
-          <p className="text-xs text-ink-soft">{bottomLeft}</p>
+        <div className="py-5 flex justify-between items-center flex-wrap gap-3">
+          <p className="text-xs text-white/45">{bottomLeft}</p>
           {bottomRight ?? (
-            <div className="flex gap-5 text-xs text-ink-soft">
+            <div className="flex gap-5 text-xs text-white/45">
               {bottomLinks.map((link) => (
                 <Link key={link.label} href={link.href} className="hover:text-blue">
                   {link.label}
@@ -67,7 +75,6 @@ export function Footer({
           )}
         </div>
       </Container>
-      <BrandBar thick />
     </footer>
   );
 }

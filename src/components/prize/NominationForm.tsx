@@ -3,10 +3,11 @@
 import { useState, FormEvent } from "react";
 import { Container } from "@/components/ui/Container";
 import { SectionHead } from "@/components/ui/SectionHead";
+import { Button } from "@/components/ui/Button";
 
 const fieldClass =
-  "w-full bg-paper border border-line rounded-sm px-4 py-3.5 text-sm text-ink placeholder:text-ink-soft/60 focus:outline-none focus:border-blue transition-colors";
-const labelClass = "block font-mono text-[11px] tracking-[0.06em] uppercase font-semibold text-ink-soft mb-2";
+  "w-full bg-paper border border-line px-4 py-3.5 text-sm text-ink placeholder:text-ink-soft/60 focus:outline-none focus:border-blue transition-colors";
+const labelClass = "block text-[11px] tracking-[0.05em] uppercase font-bold text-ink-soft mb-2";
 
 export function NominationForm() {
   const [selfNominate, setSelfNominate] = useState(false);
@@ -49,13 +50,13 @@ export function NominationForm() {
 
   if (status === "done") {
     return (
-      <section className="py-24" id="nominate-form">
+      <section className="py-[88px]" id="nominate-form">
         <Container narrow>
-          <div className="text-center border border-line rounded-md p-12">
-            <div className="font-mono text-[11px] tracking-[0.1em] uppercase text-blue mb-3">
+          <div className="text-center border border-line p-12">
+            <div className="text-[11px] tracking-[0.08em] uppercase font-bold text-blue mb-3">
               Nomination Received
             </div>
-            <h2 className="font-display text-2xl font-bold mb-3">Thank you.</h2>
+            <h2 className="text-2xl font-extrabold mb-3">Thank you.</h2>
             <p className="text-ink-soft max-w-[440px] mx-auto">
               We&apos;ve received the nomination and will follow up with
               shortlisted storytellers directly. Nominations close September
@@ -68,12 +69,13 @@ export function NominationForm() {
   }
 
   return (
-    <section className="py-24" id="nominate-form">
+    <section className="py-[88px]" id="nominate-form">
       <Container narrow>
         <SectionHead
           eyebrow="Submit A Nomination"
           title="Nominate A Storyteller"
           align="center"
+          compact
           description="Fill this out for someone else, or for yourself — nominations close September 30, 2026."
         />
 
@@ -182,13 +184,9 @@ export function NominationForm() {
             <p className="text-sm text-red-600">{errorMsg}</p>
           )}
 
-          <button
-            type="submit"
-            disabled={status === "loading"}
-            className="inline-flex items-center gap-2 font-mono text-xs tracking-[0.08em] uppercase font-semibold px-6 py-3.5 rounded-full border-[1.5px] border-blue bg-blue text-paper transition-all hover:bg-blue-deep hover:border-blue-deep disabled:opacity-60"
-          >
+          <Button type="submit" variant="blue" disabled={status === "loading"}>
             {status === "loading" ? "Submitting…" : "Submit Nomination →"}
-          </button>
+          </Button>
         </form>
       </Container>
     </section>

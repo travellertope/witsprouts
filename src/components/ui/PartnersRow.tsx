@@ -6,10 +6,12 @@ export function PartnersRow({
   partners,
   note,
   narrow = false,
+  align = "left",
 }: {
   partners: Partner[];
   note: string;
   narrow?: boolean;
+  align?: "left" | "center";
 }) {
   return (
     <Container narrow={narrow}>
@@ -17,12 +19,14 @@ export function PartnersRow({
         eyebrow="Our Partners"
         title="Organisations We've Partnered With"
         description={note}
+        align={align}
+        compact={narrow}
       />
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-[2px] bg-line border border-line">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-line">
         {partners.map((partner) => (
-          <div key={partner.name} className="bg-paper py-10 px-7 text-center">
-            <div className="font-display text-xl font-bold">{partner.name}</div>
-            <div className="font-mono text-[10px] tracking-[0.08em] uppercase text-blue mt-2.5">
+          <div key={partner.name} className="bg-paper py-9 px-[26px] text-center">
+            <div className="text-lg font-bold">{partner.name}</div>
+            <div className="text-[11px] tracking-[0.05em] uppercase font-bold text-blue mt-2">
               {partner.tag}
             </div>
           </div>

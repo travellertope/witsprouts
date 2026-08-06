@@ -5,18 +5,18 @@ import { moments } from "@/lib/content/home";
 
 export function Moments() {
   return (
-    <section className="bg-ink text-paper py-[104px]">
+    <section className="bg-ink text-paper py-24">
       <Container>
-        <div className="mb-12">
-          <Eyebrow className="text-blue">Storytelling Moments</Eyebrow>
-          <h2 className="font-display font-bold text-[clamp(30px,3.6vw,46px)] leading-[1.08] tracking-tight mt-3.5">
+        <div className="mb-11">
+          <Eyebrow className="text-white/60">Storytelling Moments</Eyebrow>
+          <h2 className="font-extrabold text-[clamp(28px,3.4vw,42px)] leading-[1.12] tracking-tight mt-3">
             Witsprouts Moments
           </h2>
         </div>
         <div className="moments-scroller flex gap-5 overflow-x-auto pb-2">
           {moments.map((moment) => (
             <div key={moment.title} className="flex-none w-[300px] cursor-pointer group">
-              <div className="aspect-[4/3] rounded-sm overflow-hidden relative bg-mist-2">
+              <div className="aspect-[4/3] overflow-hidden relative bg-mist">
                 <Image
                   src={moment.thumbnail}
                   alt={moment.title}
@@ -25,17 +25,13 @@ export function Moments() {
                   className="object-cover transition-transform duration-400 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="w-[52px] h-[52px] rounded-full bg-white/90 flex items-center justify-center text-base text-ink">
+                  <span className="w-[50px] h-[50px] rounded-full bg-white/92 flex items-center justify-center text-[15px] text-ink">
                     ▶
                   </span>
                 </div>
               </div>
-              <div className="font-display text-base font-semibold mt-3.5 leading-snug">
-                {moment.title}
-              </div>
-              <div className="font-mono text-[11px] text-white/50 mt-2 tracking-[0.04em]">
-                {moment.meta}
-              </div>
+              <div className="text-[15.5px] font-bold mt-3.5 leading-snug">{moment.title}</div>
+              <div className="text-xs text-white/50 mt-2">{moment.meta}</div>
             </div>
           ))}
         </div>

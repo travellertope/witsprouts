@@ -5,7 +5,7 @@ type Size = "default" | "prize" | "narrow";
 const widths: Record<Size, string> = {
   default: "max-w-[1240px]",
   prize: "max-w-[1160px]",
-  narrow: "max-w-[820px]",
+  narrow: "max-w-[800px]",
 };
 
 export function Container({

@@ -14,7 +14,7 @@ export function UtilityStrip({
   return (
     <div className="bg-ink text-white/65">
       <Container size={size}>
-        <div className="flex items-center justify-between py-2.5 font-mono text-[11px] flex-col sm:flex-row gap-2 sm:gap-0">
+        <div className="flex items-center justify-between py-2.5 text-xs flex-col sm:flex-row gap-2 sm:gap-0">
           {left}
           {right}
         </div>

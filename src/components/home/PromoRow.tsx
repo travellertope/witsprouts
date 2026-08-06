@@ -10,37 +10,37 @@ function ArrowIcon() {
 
 export function PromoRow() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-[1fr_1.4fr] gap-[2px] bg-line">
+    <div className="grid grid-cols-1 md:grid-cols-[1fr_1.4fr] gap-px bg-line">
       <Link
         href="#storytellers"
-        className="group bg-paper p-10 min-h-[230px] flex flex-col justify-between"
+        className="group bg-paper p-10 min-h-[220px] flex flex-col justify-between"
       >
         <div>
-          <div className="font-mono text-[11px] tracking-[0.1em] uppercase text-blue">
+          <div className="text-xs tracking-[0.08em] uppercase font-bold text-blue">
             2025 Winner
           </div>
-          <h3 className="text-[26px] font-semibold mt-3 max-w-[420px] font-display">
+          <h3 className="text-2xl font-bold mt-3 max-w-[420px]">
             Rachel Ajisafe — “Haunting Song of Promises”
           </h3>
         </div>
-        <span className="mt-5 font-mono text-xs tracking-[0.06em] uppercase font-semibold flex items-center gap-2">
+        <span className="mt-5 text-[13px] tracking-[0.02em] font-semibold flex items-center gap-2">
           See Her Story <ArrowIcon />
         </span>
       </Link>
       <Link
         href="/prize/2026"
-        className="group bg-blue-deep text-paper p-10 min-h-[230px] flex flex-col justify-between"
+        className="group bg-ink text-paper p-10 min-h-[220px] flex flex-col justify-between"
       >
         <div>
-          <div className="font-mono text-[11px] tracking-[0.1em] uppercase text-blue">
+          <div className="text-xs tracking-[0.08em] uppercase font-bold text-blue">
             2nd Edition · Nominations Open
           </div>
-          <h3 className="text-[26px] font-semibold mt-3 max-w-[420px] font-display">
+          <h3 className="text-2xl font-bold mt-3 max-w-[420px]">
             The Witsprouts Storytelling Prize 2026 — no theme, every form of
             storytelling welcome.
           </h3>
         </div>
-        <span className="mt-5 font-mono text-xs tracking-[0.06em] uppercase font-semibold flex items-center gap-2">
+        <span className="mt-5 text-[13px] tracking-[0.02em] font-semibold flex items-center gap-2">
           How to Nominate a Storyteller <ArrowIcon />
         </span>
       </Link>

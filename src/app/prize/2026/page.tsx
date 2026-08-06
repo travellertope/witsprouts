@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { BrandBar } from "@/components/ui/BrandBar";
 import { Nav } from "@/components/layout/Nav";
 import { UtilityStrip, Breadcrumb } from "@/components/layout/UtilityStrip";
 import { Footer } from "@/components/layout/Footer";
 import { PartnersRow } from "@/components/ui/PartnersRow";
+import { StatStrip } from "@/components/ui/StatStrip";
 import { Hero } from "@/components/prize/Hero";
 import { About } from "@/components/prize/About";
 import { WhatsNew } from "@/components/prize/WhatsNew";
@@ -15,6 +15,7 @@ import { Judges } from "@/components/prize/Judges";
 import { Spotlight } from "@/components/prize/Spotlight";
 import { Faq } from "@/components/prize/Faq";
 import { FinalCta } from "@/components/prize/FinalCta";
+import { prize2026 } from "@/lib/content/prize";
 
 const partners2025 = [
   { name: "Hill-Top Creative Arts Foundation", tag: "2025 Edition Partner" },
@@ -29,8 +30,6 @@ export const metadata: Metadata = {
 export default function Prize2026() {
   return (
     <>
-      <BrandBar />
-
       <UtilityStrip
         size="prize"
         left={
@@ -57,17 +56,26 @@ export default function Prize2026() {
 
       <main className="flex-1">
         <Hero />
+        <StatStrip
+          size="prize"
+          stats={[
+            { num: prize2026.purse, label: "Prize Purse" },
+            { num: prize2026.opensLabel, label: "Nominations Open" },
+            { num: prize2026.closesLabel, label: "Nominations Close" },
+          ]}
+        />
         <About />
         <WhatsNew />
         <Eligibility />
         <HowToNominate />
         <NominationForm />
         <KeyDates />
-        <section className="bg-mist py-24">
+        <section className="bg-mist py-[88px]">
           <PartnersRow
             partners={partners2025}
             note="The inaugural edition was delivered together with three partnering organisations. These aren't standing sponsors — they're collaborators who partnered on that specific edition."
             narrow
+            align="center"
           />
         </section>
         <Judges />
@@ -106,7 +114,7 @@ export default function Prize2026() {
           },
         ]}
         bottomLeft="© 2026 The Witsprouts Project. All rights reserved."
-        bottomRight={<p className="text-xs text-ink-soft">witsprouts.org/prize/2026</p>}
+        bottomRight={<p className="text-xs text-white/45">witsprouts.org/prize/2026</p>}
       />
     </>
   );

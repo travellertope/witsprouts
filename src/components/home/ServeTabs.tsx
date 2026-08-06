@@ -22,7 +22,7 @@ export function ServeTabs() {
           <button
             key={tab.key}
             onClick={() => setActive(tab.key)}
-            className={`font-mono text-xs tracking-[0.06em] uppercase font-semibold px-[22px] py-3 rounded-full border-[1.5px] border-ink cursor-pointer transition-colors ${
+            className={`text-[13px] font-semibold px-[22px] py-[11px] rounded-full border-[1.5px] border-ink cursor-pointer transition-colors ${
               active === tab.key ? "bg-ink text-paper" : "bg-transparent text-ink"
             }`}
           >
@@ -40,7 +40,7 @@ export function ServeTabs() {
             <li key={item} className="border-b border-ink">
               <a
                 href="#"
-                className="flex justify-between items-center py-5 px-1 font-display text-lg font-medium hover:text-blue"
+                className="flex justify-between items-center py-[19px] px-1 text-lg font-semibold hover:text-blue"
               >
                 {item}
                 <span className="text-lg">↗</span>

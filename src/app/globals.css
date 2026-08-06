@@ -1,17 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --ink: #0a0a0a;
-  --ink-soft: #3a3f47;
+  --ink: #1c1b17;
+  --ink-soft: #55534a;
   --paper: #ffffff;
-  --mist: #f3f5f9;
-  --mist-2: #eceff4;
-  --line: #e3e6ec;
+  --mist: #f6f4ee;
+  --line: #e4e1d6;
   --blue: #0296ff;
-  --blue-deep: #0a2647;
-  --navy: #123b6d;
-  --cream: #f1ece1;
-  --gold: #b98a2f;
+  --cream: #efe8d8;
 }
 
 @theme inline {
@@ -19,17 +15,11 @@
   --color-ink-soft: var(--ink-soft);
   --color-paper: var(--paper);
   --color-mist: var(--mist);
-  --color-mist-2: var(--mist-2);
   --color-line: var(--line);
   --color-blue: var(--blue);
-  --color-blue-deep: var(--blue-deep);
-  --color-navy: var(--navy);
   --color-cream: var(--cream);
-  --color-gold: var(--gold);
 
-  --font-display: var(--font-space-grotesk), sans-serif;
   --font-body: var(--font-inter), sans-serif;
-  --font-mono: var(--font-jetbrains-mono), monospace;
 }
 
 html {
@@ -43,63 +33,28 @@ body {
   overflow-x: hidden;
 }
 
-/* Signature brand gradient bar, used top/bottom of every page */
-.brand-bar {
-  height: 9px;
-  background: linear-gradient(
-    90deg,
-    var(--blue-deep) 0%,
-    var(--blue) 38%,
-    var(--navy) 62%,
-    var(--blue) 100%
-  );
-  position: relative;
-  overflow: hidden;
-}
-.brand-bar::after {
-  content: "";
-  position: absolute;
-  top: -60%;
-  left: 18%;
-  width: 14%;
-  height: 220%;
-  background: rgba(255, 255, 255, 0.4);
-  transform: skewX(-18deg);
-}
-.brand-bar.thick {
-  height: 16px;
-}
-
 /* Chevron mark shape, sized/colored per use-site via Tailwind utilities */
 .chevron-mark {
   flex: none;
   clip-path: polygon(0 0, 100% 50%, 0 100%, 30% 50%);
 }
 
-/* Homepage hero: photo scrim + diagonal brand-gradient wedge */
-.hero-scrim {
+/* Photo hero: dark-to-transparent scrim so overlaid text stays readable */
+.hero-scrim-bottom {
   background: linear-gradient(
-    100deg,
-    var(--ink) 0%,
-    rgba(10, 10, 10, 0.88) 32%,
-    rgba(10, 10, 10, 0.55) 60%,
-    rgba(10, 10, 10, 0.35) 100%
+    0deg,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 0, 0, 0.15) 45%,
+    rgba(0, 0, 0, 0.05) 65%
   );
 }
-.hero-bg-shape {
-  background: linear-gradient(160deg, var(--navy) 0%, var(--blue) 55%, transparent 100%);
-  opacity: 0.4;
-  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
-  mix-blend-mode: screen;
-}
-
-/* Mission section seal */
-.mission-seal::before {
-  content: "";
-  position: absolute;
-  inset: 14px;
-  border-radius: 50%;
-  border: 1px dashed rgba(255, 255, 255, 0.25);
+.hero-scrim-center {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.25) 55%,
+    rgba(0, 0, 0, 0.1) 75%
+  );
 }
 
 /* Prize page: numbered steps ("01", "02"...) */
@@ -116,12 +71,12 @@ body {
 /* Prize page: vertical timeline with dots */
 .timeline {
   position: relative;
-  padding-left: 32px;
+  padding-left: 30px;
 }
 .timeline::before {
   content: "";
   position: absolute;
-  left: 7px;
+  left: 6px;
   top: 6px;
   bottom: 6px;
   width: 2px;
@@ -129,10 +84,10 @@ body {
 }
 .tl-dot {
   position: absolute;
-  left: -32px;
+  left: -30px;
   top: 2px;
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   background: var(--paper);
   border: 2.5px solid var(--line);
@@ -140,17 +95,6 @@ body {
 .tl-item.active .tl-dot {
   border-color: var(--blue);
   background: var(--blue);
-}
-
-/* Prize page: spotlight card top gradient rule */
-.spotlight::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 5px;
-  background: linear-gradient(90deg, var(--blue-deep), var(--blue), var(--navy), var(--blue));
 }
 
 /* FAQ accordion: grid-rows trick for smooth height animation without JS measuring */

@@ -23,6 +23,7 @@ export function PromoRow() {
           sizes="(min-width: 768px) 40vw, 100vw"
           className="object-cover transition-transform duration-500 group-hover:scale-105"
         />
+        <div className="absolute inset-0 bg-black/55" />
         <div className="absolute inset-0 hero-scrim-bottom" />
         <div className="relative">
           <div className="text-xs tracking-[0.08em] uppercase font-bold text-blue">
@@ -47,6 +48,7 @@ export function PromoRow() {
           sizes="(min-width: 768px) 60vw, 100vw"
           className="object-cover transition-transform duration-500 group-hover:scale-105"
         />
+        <div className="absolute inset-0 bg-black/55" />
         <div className="absolute inset-0 hero-scrim-bottom" />
         <div className="relative">
           <div className="text-xs tracking-[0.08em] uppercase font-bold text-blue">

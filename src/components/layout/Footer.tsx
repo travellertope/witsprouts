@@ -55,7 +55,7 @@ export function Footer({
         >
           <div>
             <div className="mb-4">
-              <Logo className="text-white" />
+              <Logo variant="white" />
             </div>
             <p className="text-[13.5px] text-white/55 leading-relaxed max-w-[260px]">
               {tagline}

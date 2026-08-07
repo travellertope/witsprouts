@@ -1,23 +1,31 @@
+import Image from "next/image";
 import Link from "next/link";
+
+const ASPECT = 630 / 177;
 
 export function Logo({
   href = "/",
   size = "default",
+  variant = "blue",
   className = "",
 }: {
   href?: string;
   size?: "default" | "prize";
+  variant?: "blue" | "white";
   className?: string;
 }) {
-  const mark = size === "prize" ? "w-6 h-6" : "w-[26px] h-[26px]";
-  const text = size === "prize" ? "text-[19px]" : "text-[21px]";
+  const height = size === "prize" ? 26 : 30;
+  const width = Math.round(height * ASPECT);
   return (
-    <Link
-      href={href}
-      className={`flex items-center gap-2.5 font-extrabold tracking-tight ${text} ${className}`}
-    >
-      <span className={`chevron-mark bg-blue ${mark}`} />
-      WITSPROUTS
+    <Link href={href} className={`flex items-center ${className}`}>
+      <Image
+        src={variant === "white" ? "/brand/logo-white.png" : "/brand/logo-blue.png"}
+        alt="The Witsprouts Project"
+        width={width}
+        height={height}
+        priority
+        style={{ height, width: "auto" }}
+      />
     </Link>
   );
 }

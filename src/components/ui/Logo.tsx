@@ -14,7 +14,7 @@ export function Logo({
   variant?: "blue" | "white";
   className?: string;
 }) {
-  const height = size === "prize" ? 26 : 30;
+  const height = size === "prize" ? 34 : 40;
   const width = Math.round(height * ASPECT);
   return (
     <Link href={href} className={`flex items-center ${className}`}>

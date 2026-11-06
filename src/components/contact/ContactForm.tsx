@@ -37,11 +37,11 @@ export function ContactForm() {
   }
 
   return (
-    <section className="bg-ink text-paper py-24" id="contact-form">
+    <section className="bg-teal text-paper py-24" id="contact-form">
       <Container size="prize">
         <div className="grid grid-cols-1 md:grid-cols-[1fr_1.2fr] gap-14 items-start">
           <div>
-            <h2 className="font-extrabold text-[clamp(28px,3.6vw,40px)] leading-[1.12] tracking-tight">
+            <h2 className="font-bold text-[clamp(28px,3.6vw,40px)] leading-[1.12] tracking-tight">
               Based In Lagos &amp; Abuja
             </h2>
             <p className="mt-4 text-[15px] leading-loose text-white/68 max-w-[420px]">
@@ -51,7 +51,7 @@ export function ContactForm() {
             <ul className="mt-8 border-t border-white/15">
               {locations.map((loc) => (
                 <li key={loc.name} className="border-b border-white/15 py-4">
-                  <div className="text-[10.5px] tracking-[0.05em] uppercase font-bold text-blue">
+                  <div className="text-[10.5px] tracking-[0.05em] uppercase font-bold text-ochre">
                     {loc.tag}
                   </div>
                   <div className="text-[15px] font-semibold mt-1">{loc.name}</div>
@@ -64,7 +64,7 @@ export function ContactForm() {
                   key={label}
                   href="#"
                   aria-label={label}
-                  className="w-[34px] h-[34px] rounded-full border border-white/30 flex items-center justify-center text-xs hover:border-blue hover:text-blue"
+                  className="w-[34px] h-[34px] rounded-full border border-white/30 flex items-center justify-center text-xs hover:border-ochre hover:text-ochre"
                 >
                   {label.slice(0, 2).toUpperCase()}
                 </a>
@@ -74,7 +74,7 @@ export function ContactForm() {
 
           {status === "done" ? (
             <div className="border border-white/20 p-10 text-center">
-              <div className="text-[11px] tracking-[0.08em] uppercase font-bold text-blue mb-3">
+              <div className="text-[11px] tracking-[0.08em] uppercase font-bold text-ochre mb-3">
                 Message Sent
               </div>
               <h3 className="text-xl font-bold mb-2">Thank you.</h3>

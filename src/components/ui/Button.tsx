@@ -7,9 +7,9 @@ const base =
   "inline-flex items-center gap-2 text-sm font-semibold px-[26px] py-3.5 rounded-[2px] border-[1.5px] transition-all duration-200 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed max-w-full";
 
 const variants: Record<Variant, string> = {
-  solid: "bg-ink border-ink text-paper hover:bg-blue hover:border-blue",
-  blue: "bg-blue border-blue text-paper hover:bg-ink hover:border-ink",
-  outline: "bg-transparent border-ink text-ink hover:bg-ink hover:text-paper",
+  solid: "bg-teal border-teal text-paper hover:bg-ochre hover:border-ochre",
+  blue: "bg-ochre border-ochre text-paper hover:bg-teal hover:border-teal",
+  outline: "bg-transparent border-ink text-ink hover:bg-teal hover:text-paper",
   white: "bg-transparent border-paper text-paper hover:bg-paper hover:text-ink",
 };
 

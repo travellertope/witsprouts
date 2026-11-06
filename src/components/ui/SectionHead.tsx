@@ -23,7 +23,7 @@ export function SectionHead({
       } ${className}`}
     >
       <h2
-        className={`font-extrabold tracking-tight leading-[1.12] ${
+        className={`font-bold tracking-tight leading-[1.12] ${
           compact ? "text-[clamp(26px,3.2vw,38px)]" : "text-[clamp(28px,3.4vw,42px)]"
         }`}
       >

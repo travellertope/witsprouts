@@ -36,7 +36,7 @@ export function PartnersRow({
             ) : (
               <div className="text-lg font-bold mb-2">{partner.name}</div>
             )}
-            <div className="text-[11px] tracking-[0.05em] uppercase font-bold text-blue">
+            <div className="text-[11px] tracking-[0.05em] uppercase font-bold text-ochre">
               {partner.tag}
             </div>
           </div>

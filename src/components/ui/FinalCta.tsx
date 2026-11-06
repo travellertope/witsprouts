@@ -24,12 +24,12 @@ export function FinalCta({
 }) {
   return (
     <section
-      className={`bg-ink text-paper text-center py-[88px] ${
+      className={`bg-teal text-paper text-center py-[88px] ${
         topBorder ? "border-t border-white/10" : ""
       }`}
     >
       <Container size={size}>
-        <h2 className="font-extrabold text-[clamp(28px,3.6vw,42px)] leading-[1.12] tracking-tight max-w-[640px] mx-auto">
+        <h2 className="font-bold text-[clamp(28px,3.6vw,42px)] leading-[1.12] tracking-tight max-w-[640px] mx-auto">
           {title}
         </h2>
         <p className="mt-[18px] mb-8 text-[15px] text-white/65 max-w-[460px] mx-auto">

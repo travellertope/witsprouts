@@ -32,7 +32,7 @@ export function AceFramework() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {pillars.map((pillar) => (
             <div key={pillar.letter} className="border border-line p-8">
-              <div className="text-[38px] font-extrabold text-blue leading-none">
+              <div className="text-[38px] font-bold text-ochre leading-none">
                 {pillar.letter}
               </div>
               <h3 className="text-[19px] font-bold mt-4">{pillar.title}</h3>

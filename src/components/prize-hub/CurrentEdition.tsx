@@ -14,9 +14,9 @@ export function CurrentEdition() {
     <section className="bg-mist py-[88px]" id="current">
       <Container size="prize">
         <SectionHead title="The Current Edition" compact />
-        <div className="bg-ink text-paper p-9 md:p-14 grid grid-cols-1 md:grid-cols-[1.2fr_1fr] gap-12 items-center">
+        <div className="bg-teal text-paper p-9 md:p-14 grid grid-cols-1 md:grid-cols-[1.2fr_1fr] gap-12 items-center">
           <div>
-            <div className="inline-flex items-center gap-2 text-xs tracking-[0.08em] uppercase font-bold text-blue">
+            <div className="inline-flex items-center gap-2 text-xs tracking-[0.08em] uppercase font-bold text-ochre">
               2nd Edition · Nominations Closed
             </div>
             <h3 className="text-[clamp(24px,3vw,34px)] font-bold mt-3.5">
@@ -29,13 +29,13 @@ export function CurrentEdition() {
             </p>
             <div className="flex gap-7 mt-6">
               <div>
-                <div className="text-xl font-extrabold text-blue">₦500,000</div>
+                <div className="text-xl font-bold text-ochre">₦500,000</div>
                 <div className="text-[11px] text-white/50 uppercase tracking-[0.04em] mt-0.5">
                   Prize Purse
                 </div>
               </div>
               <div>
-                <div className="text-xl font-extrabold text-blue">Sep 30</div>
+                <div className="text-xl font-bold text-ochre">Sep 30</div>
                 <div className="text-[11px] text-white/50 uppercase tracking-[0.04em] mt-0.5">
                   Nominations Closed
                 </div>

@@ -18,7 +18,7 @@ export function HowToNominate() {
               key={step.title}
               className="grid grid-cols-[56px_1fr] gap-[22px] py-[26px] border-b border-line last:border-b-0"
             >
-              <div className="step-num text-2xl font-extrabold text-blue" />
+              <div className="step-num text-2xl font-bold text-ochre" />
               <div>
                 <h4 className="text-[17px] font-bold mb-1.5">{step.title}</h4>
                 <p className="text-sm leading-relaxed text-ink-soft">{step.body}</p>

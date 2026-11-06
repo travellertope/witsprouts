@@ -5,7 +5,7 @@ export function Spotlight() {
   return (
     <section className="bg-mist py-[88px]" id="spotlight">
       <Container size="prize">
-        <div className="bg-ink text-paper grid grid-cols-1 md:grid-cols-2 gap-11 items-center p-9 md:p-16">
+        <div className="bg-teal text-paper grid grid-cols-1 md:grid-cols-2 gap-11 items-center p-9 md:p-16">
           <div className="relative w-full h-[280px] md:h-full md:min-h-[280px]">
             <Image
               src="/images/people/rachel-ajisafe.jpg"
@@ -16,7 +16,7 @@ export function Spotlight() {
             />
           </div>
           <div>
-            <div className="text-[11px] tracking-[0.08em] uppercase font-bold text-blue">
+            <div className="text-[11px] tracking-[0.08em] uppercase font-bold text-ochre">
               2025 Spotlight · Our Inaugural Winner
             </div>
             <h3 className="text-[clamp(22px,2.8vw,30px)] font-bold mt-3">
@@ -30,7 +30,7 @@ export function Spotlight() {
               shortlist of three finalists — Debbie Ajom, Keesh Rowland, and
               Rachel Ajisafe — and received ₦500,000 as the inaugural prize.
             </p>
-            <blockquote className="border-l-2 border-blue pl-5 mt-[26px]">
+            <blockquote className="border-l-2 border-ochre pl-5 mt-[26px]">
               <p className="text-lg leading-snug font-semibold">
                 &ldquo;A natural storyteller with a poetic flair — she moved
                 beyond mere recitation to create a performance that truly

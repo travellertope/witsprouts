@@ -14,7 +14,7 @@ export function OurStory() {
       <Container size="prize">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
           <div>
-            <h2 className="font-extrabold text-[clamp(28px,3.4vw,42px)] leading-[1.12] tracking-tight">
+            <h2 className="font-bold text-[clamp(28px,3.4vw,42px)] leading-[1.12] tracking-tight">
               Why Witsprouts
             </h2>
           </div>

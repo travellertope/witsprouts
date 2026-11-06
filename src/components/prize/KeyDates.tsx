@@ -26,13 +26,13 @@ export function KeyDates() {
               const isLast = i === timeline.length - 1;
 
               const dotClass = isActive
-                ? "border-blue bg-blue"
+                ? "border-ochre bg-ochre"
                 : isPast
                 ? "border-line bg-line"
                 : "border-line bg-paper";
 
               const tagClass = isActive
-                ? "text-blue"
+                ? "text-ochre"
                 : "text-ink-soft";
 
               const content = (
@@ -55,7 +55,7 @@ export function KeyDates() {
                   {item.href && (
                     <Link
                       href={item.href}
-                      className="inline-flex items-center gap-1 mt-2.5 text-[12px] font-bold tracking-[0.02em] text-blue hover:underline"
+                      className="inline-flex items-center gap-1 mt-2.5 text-[12px] font-bold tracking-[0.02em] text-ochre hover:underline"
                     >
                       View Longlist →
                     </Link>

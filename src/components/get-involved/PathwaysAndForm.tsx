@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/Button";
 import { pathways, OpportunityTag } from "@/lib/content/getInvolved";
 
 const tagStyles: Record<OpportunityTag, string> = {
-  open: "bg-blue text-white",
+  open: "bg-ochre text-white",
   ongoing: "bg-mist text-ink-soft border border-line",
   upcoming: "bg-transparent text-ink-soft border border-line",
 };
@@ -81,7 +81,7 @@ export function PathwaysAndForm() {
                 key={p.id}
                 onClick={() => setActiveId(p.id)}
                 className={`text-[13px] font-semibold px-5 py-[11px] rounded-full border-[1.5px] border-ink cursor-pointer transition-colors ${
-                  activeId === p.id ? "bg-ink text-paper" : "bg-transparent text-ink"
+                  activeId === p.id ? "bg-teal text-paper" : "bg-transparent text-ink"
                 }`}
               >
                 {p.tabLabel}
@@ -140,11 +140,11 @@ export function PathwaysAndForm() {
       </section>
 
       {/* EXPRESSION OF INTEREST FORM */}
-      <section className="bg-ink text-paper py-24" id="eoi-form">
+      <section className="bg-teal text-paper py-24" id="eoi-form">
         <Container size="prize">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-start">
             <div>
-              <h2 className="font-extrabold text-[clamp(28px,3.6vw,40px)] leading-[1.12] tracking-tight">
+              <h2 className="font-bold text-[clamp(28px,3.6vw,40px)] leading-[1.12] tracking-tight">
                 Tell Us How You&apos;d Like To Build With Us
               </h2>
               <p className="mt-4 text-[15px] leading-loose text-white/68 max-w-[420px]">
@@ -156,7 +156,7 @@ export function PathwaysAndForm() {
 
             {status === "done" ? (
               <div className="border border-white/20 p-10 text-center">
-                <div className="text-[11px] tracking-[0.08em] uppercase font-bold text-blue mb-3">
+                <div className="text-[11px] tracking-[0.08em] uppercase font-bold text-ochre mb-3">
                   Received
                 </div>
                 <h3 className="text-xl font-bold mb-2">Thank you.</h3>

@@ -32,11 +32,11 @@ export function Nav({
             <Link
               key={link.href}
               href={link.href}
-              className={`relative py-1 group ${link.current ? "text-blue" : ""}`}
+              className={`relative py-1 group ${link.current ? "text-ochre" : ""}`}
             >
               {link.label}
               <span
-                className={`absolute left-0 -bottom-0.5 h-0.5 bg-blue transition-all duration-200 group-hover:w-full ${
+                className={`absolute left-0 -bottom-0.5 h-0.5 bg-ochre transition-all duration-200 group-hover:w-full ${
                   link.current ? "w-full" : "w-0"
                 }`}
               />
@@ -57,17 +57,17 @@ export function Nav({
             className="md:hidden flex flex-col justify-center items-center gap-[5px] w-9 h-9 flex-none"
           >
             <span
-              className={`block w-5 h-[1.5px] bg-ink transition-transform duration-200 ${
+              className={`block w-5 h-[1.5px] bg-teal transition-transform duration-200 ${
                 open ? "translate-y-[6.5px] rotate-45" : ""
               }`}
             />
             <span
-              className={`block w-5 h-[1.5px] bg-ink transition-opacity duration-200 ${
+              className={`block w-5 h-[1.5px] bg-teal transition-opacity duration-200 ${
                 open ? "opacity-0" : ""
               }`}
             />
             <span
-              className={`block w-5 h-[1.5px] bg-ink transition-transform duration-200 ${
+              className={`block w-5 h-[1.5px] bg-teal transition-transform duration-200 ${
                 open ? "-translate-y-[6.5px] -rotate-45" : ""
               }`}
             />
@@ -82,7 +82,7 @@ export function Nav({
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className={`py-2.5 text-[15px] font-medium ${link.current ? "text-blue" : ""}`}
+              className={`py-2.5 text-[15px] font-medium ${link.current ? "text-ochre" : ""}`}
             >
               {link.label}
             </Link>

@@ -3,7 +3,7 @@ import { SectionHead } from "@/components/ui/SectionHead";
 
 export function VisionMission() {
   return (
-    <section className="bg-ink text-paper py-24" id="mission">
+    <section className="bg-teal text-paper py-24" id="mission">
       <Container size="prize">
         <SectionHead
           title="What We're Working Toward"

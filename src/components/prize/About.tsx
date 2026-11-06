@@ -23,7 +23,7 @@ export function About() {
           today&apos;s digital platforms through original 5–10 minute
           theatrical video performances.
         </p>
-        <blockquote className="border-l-2 border-blue pl-5 my-[26px]">
+        <blockquote className="border-l-2 border-ochre pl-5 my-[26px]">
           <p className="text-lg leading-snug font-semibold">
             &ldquo;Storytelling is one of the most powerful tools we have, and
             it is evolving. Contemporary griots, creative podcasters, spoken

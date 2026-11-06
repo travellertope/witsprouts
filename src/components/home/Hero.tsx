@@ -14,7 +14,7 @@ export function Hero() {
         <div className="mt-14 flex flex-col sm:flex-row items-center justify-center gap-6">
           <a
             href="#about"
-            className="w-full sm:w-auto px-10 py-4 bg-teal text-paper text-sm font-semibold tracking-widest uppercase hover:bg-ink transition-colors duration-300 text-center"
+            className="w-full sm:w-auto px-10 py-4 bg-teal text-paper text-sm font-semibold tracking-widest uppercase hover:bg-teal transition-colors duration-300 text-center"
           >
             Explore The Vision
           </a>

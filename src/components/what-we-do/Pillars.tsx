@@ -31,7 +31,7 @@ export function Pillars() {
               key={p.id}
               onClick={() => setActiveId(p.id)}
               className={`text-[13px] font-semibold px-5 py-[11px] rounded-full border-[1.5px] border-ink cursor-pointer transition-colors ${
-                activeId === p.id ? "bg-ink text-paper" : "bg-transparent text-ink"
+                activeId === p.id ? "bg-teal text-paper" : "bg-transparent text-ink"
               }`}
             >
               {p.tabLabel}
@@ -41,7 +41,7 @@ export function Pillars() {
 
         <div id={active.id} className="grid grid-cols-1 md:grid-cols-[1fr_1.3fr] gap-12">
           <div>
-            <div className="text-[44px] font-extrabold text-blue leading-none">{active.num}</div>
+            <div className="text-[44px] font-bold text-ochre leading-none">{active.num}</div>
             <h3 className="text-2xl font-bold mt-3">{active.title}</h3>
             <p className="text-sm text-ink-soft mt-3.5 leading-relaxed">
               <b className="text-ink">Goal:</b> {active.goal}

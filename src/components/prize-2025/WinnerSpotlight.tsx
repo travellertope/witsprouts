@@ -6,7 +6,7 @@ export function WinnerSpotlight() {
   return (
     <section className="py-20" id="winner">
       <Container size="prize">
-        <div className="bg-ink text-paper grid grid-cols-1 md:grid-cols-2 gap-11 items-center p-9 md:p-16">
+        <div className="bg-teal text-paper grid grid-cols-1 md:grid-cols-2 gap-11 items-center p-9 md:p-16">
           <div className="relative w-full h-[280px] md:h-full md:min-h-[300px]">
             <Image
               src="/images/people/rachel-ajisafe.jpg"
@@ -17,7 +17,7 @@ export function WinnerSpotlight() {
             />
           </div>
           <div>
-            <div className="text-[11px] tracking-[0.08em] uppercase font-bold text-blue">
+            <div className="text-[11px] tracking-[0.08em] uppercase font-bold text-ochre">
               The Winner
             </div>
             <h3 className="text-[clamp(22px,2.8vw,30px)] font-bold mt-3">
@@ -35,7 +35,7 @@ export function WinnerSpotlight() {
                 <span
                   key={f.name}
                   className={`text-[13px] font-semibold px-4 py-2 border ${
-                    f.winner ? "border-blue text-blue" : "border-white/25"
+                    f.winner ? "border-ochre text-ochre" : "border-white/25"
                   }`}
                 >
                   {f.name} — {f.winner ? "Winner" : "Finalist"}
@@ -43,7 +43,7 @@ export function WinnerSpotlight() {
               ))}
             </div>
             {winnerQuotes.map((q) => (
-              <blockquote key={q.cite} className="border-l-2 border-blue pl-5 mt-6">
+              <blockquote key={q.cite} className="border-l-2 border-ochre pl-5 mt-6">
                 <p className="text-lg leading-snug font-semibold">&ldquo;{q.quote}&rdquo;</p>
                 <cite className="block mt-3 text-xs tracking-[0.02em] uppercase font-semibold text-white/55 not-italic">
                   {q.cite}

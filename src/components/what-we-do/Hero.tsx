@@ -14,7 +14,7 @@ export function Hero() {
       />
       <div className="hero-scrim-bottom absolute inset-0" />
       <Container size="prize" className="relative z-[2] h-full flex flex-col justify-end pb-[52px]">
-        <h1 className="text-white font-extrabold text-[clamp(34px,5vw,56px)] leading-[1.12] tracking-tight max-w-[680px]">
+        <h1 className="text-white font-bold text-[clamp(34px,5vw,56px)] leading-[1.12] tracking-tight max-w-[680px]">
           Everything We Build Serves One Of Five Pillars
         </h1>
         <p className="text-white/85 mt-3.5 text-base leading-relaxed max-w-[520px]">

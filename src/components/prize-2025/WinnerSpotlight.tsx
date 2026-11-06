@@ -9,8 +9,8 @@ export function WinnerSpotlight() {
         <div className="bg-ink text-paper grid grid-cols-1 md:grid-cols-2 gap-11 items-center p-9 md:p-16">
           <div className="relative w-full h-[280px] md:h-full md:min-h-[300px]">
             <Image
-              src="/images/prize-2025/spotlight-performance.jpg"
-              alt="Storytelling performance"
+              src="/images/people/rachel-ajisafe.jpg"
+              alt="Rachel Ajisafe, 2025 Prize Winner"
               fill
               sizes="(min-width: 768px) 50vw, 100vw"
               className="object-cover"

@@ -8,7 +8,6 @@ import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/home/Hero";
 import { PromoRow } from "@/components/home/PromoRow";
 import { WhatIs } from "@/components/home/WhatIs";
-import { Storytellers } from "@/components/home/Storytellers";
 import { Mission } from "@/components/home/Mission";
 import { Moments } from "@/components/home/Moments";
 import { News } from "@/components/home/News";
@@ -57,7 +56,6 @@ export default function Home() {
         <Hero />
         <PromoRow />
         <WhatIs />
-        <Storytellers />
         <Mission />
         <Moments />
         <News />

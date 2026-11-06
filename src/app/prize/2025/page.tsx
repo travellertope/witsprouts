@@ -61,7 +61,6 @@ export default function Prize2025() {
             title: "This Archive",
             links: [
               { label: "The Theme", href: "#theme" },
-              { label: "Judges", href: "#judges" },
               { label: "2025 Shortlist", href: "/prize/2025/shortlist" },
               { label: "The Winner", href: "#winner" },
             ],

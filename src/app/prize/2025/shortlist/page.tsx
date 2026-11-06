@@ -73,7 +73,6 @@ export default function Shortlist2025() {
               { label: "2025 Edition Hub", href: "/prize/2025" },
               { label: "2025 Shortlist", href: "/prize/2025/shortlist" },
               { label: "The Theme", href: "/prize/2025#theme" },
-              { label: "Judges", href: "/prize/2025#judges" },
               { label: "The Winner", href: "/prize/2025#winner" },
             ],
           },

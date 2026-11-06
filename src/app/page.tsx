@@ -1,45 +1,15 @@
 import { Nav } from "@/components/layout/Nav";
-import {
-  UtilityStrip,
-  FamilyLinks,
-  SocialIcons,
-} from "@/components/layout/UtilityStrip";
 import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/home/Hero";
 import { PromoRow } from "@/components/home/PromoRow";
 import { WhatIs } from "@/components/home/WhatIs";
 import { Mission } from "@/components/home/Mission";
 import { Moments } from "@/components/home/Moments";
-import { News } from "@/components/home/News";
-import { PartnersRow } from "@/components/ui/PartnersRow";
 import { Newsletter } from "@/components/home/Newsletter";
-import { partners } from "@/lib/content/home";
 
 export default function Home() {
   return (
     <>
-      <UtilityStrip
-        left={
-          <FamilyLinks
-            links={[
-              { label: "Witsprouts Books", href: "https://witsprouts.com/books" },
-              { label: "Witsprouts Bookstack", href: "https://bookstack.witsprouts.com" },
-              { label: "Storyrat", href: "https://storyrat.witsprouts.com" },
-              { label: "The Moveee", href: "https://themoveee.com" },
-            ]}
-          />
-        }
-        right={
-          <SocialIcons
-            items={[
-              { label: "Instagram", href: "#" },
-              { label: "X", href: "#" },
-              { label: "TikTok", href: "#" },
-            ]}
-          />
-        }
-      />
-
       <Nav
         links={[
           { label: "About", href: "/about" },
@@ -58,13 +28,6 @@ export default function Home() {
         <WhatIs />
         <Mission />
         <Moments />
-        <News />
-        <section className="bg-mist py-24" id="partners">
-          <PartnersRow
-            partners={partners}
-            note="Partners on past editions and programmes — not standing sponsors, but collaborators who've lent their expertise along the way."
-          />
-        </section>
         <Newsletter />
       </main>
 

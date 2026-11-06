@@ -33,9 +33,9 @@ export default function Prize2025() {
         <Hero />
         <StatStrip size="prize" cols={4} stats={stats} />
         <Theme />
+        <WinnerSpotlight />
         <Judges />
         <Partners />
-        <WinnerSpotlight />
         <FinalCta
           size="prize"
           topBorder

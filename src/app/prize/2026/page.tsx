@@ -72,10 +72,10 @@ export default function Prize2026() {
         <HowToNominate />
         <KeyDates />
 
-        <section className="bg-ink text-paper py-[72px]" id="longlist">
+        <section className="bg-teal text-paper py-[72px]" id="longlist">
           <div className="max-w-[1160px] mx-auto px-8 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <div>
-              <div className="text-[11px] tracking-[0.08em] uppercase font-bold text-blue mb-2">
+              <div className="text-[11px] tracking-[0.08em] uppercase font-bold text-ochre mb-2">
                 Now Live
               </div>
               <h2 className="text-[clamp(22px,2.8vw,30px)] font-bold leading-snug">
@@ -87,7 +87,7 @@ export default function Prize2026() {
             </div>
             <a
               href="/prize/2026/longlist"
-              className="flex-none inline-flex items-center gap-2 px-6 py-3 bg-blue text-white text-[13.5px] font-bold tracking-[0.02em] hover:bg-blue/90 transition-colors"
+              className="flex-none inline-flex items-center gap-2 px-6 py-3 bg-ochre text-white text-[13.5px] font-bold tracking-[0.02em] hover:bg-ochre/90 transition-colors"
             >
               View the Longlist →
             </a>

@@ -26,7 +26,7 @@ export function PromoRow() {
         <div className="absolute inset-0 bg-black/55" />
         <div className="absolute inset-0 hero-scrim-bottom" />
         <div className="relative">
-          <div className="text-xs tracking-[0.08em] uppercase font-bold text-blue">
+          <div className="text-xs tracking-[0.08em] uppercase font-bold text-ochre">
             2025 Winner
           </div>
           <h3 className="text-2xl font-bold mt-3 max-w-[420px]">
@@ -51,7 +51,7 @@ export function PromoRow() {
         <div className="absolute inset-0 bg-black/55" />
         <div className="absolute inset-0 hero-scrim-bottom" />
         <div className="relative">
-          <div className="text-xs tracking-[0.08em] uppercase font-bold text-blue">
+          <div className="text-xs tracking-[0.08em] uppercase font-bold text-ochre">
             2nd Edition · Nominations Closed
           </div>
           <h3 className="text-2xl font-bold mt-3 max-w-[420px]">

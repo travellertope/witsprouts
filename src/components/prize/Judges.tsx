@@ -33,7 +33,7 @@ export function Judges() {
             ))}
             <Link
               href="/prize/2025#judges"
-              className="mt-4 text-xs tracking-[0.02em] font-bold text-blue inline-flex items-center gap-1.5"
+              className="mt-4 text-xs tracking-[0.02em] font-bold text-ochre inline-flex items-center gap-1.5"
             >
               See Full 2025 Archive →
             </Link>

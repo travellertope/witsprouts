@@ -22,13 +22,13 @@ function ShortlistCard({ person }: { person: Shortlister }) {
           className="object-cover object-top"
         />
         {person.winner && (
-          <div className="absolute top-4 left-4 bg-blue text-white text-[11px] tracking-[0.07em] uppercase font-bold px-3 py-1.5">
+          <div className="absolute top-4 left-4 bg-ochre text-white text-[11px] tracking-[0.07em] uppercase font-bold px-3 py-1.5">
             2025 Winner
           </div>
         )}
       </div>
       <div className="flex flex-col flex-1 px-6 pt-5 pb-6">
-        <div className="text-[11px] tracking-[0.07em] uppercase font-bold text-blue mb-2">
+        <div className="text-[11px] tracking-[0.07em] uppercase font-bold text-ochre mb-2">
           {person.winner ? "2025 Shortlist · Winner" : "2025 Shortlist · Finalist"}
         </div>
         <h2 className="text-[19px] font-bold leading-snug">{person.name}</h2>
@@ -52,7 +52,7 @@ function ShortlistCard({ person }: { person: Shortlister }) {
           <button
             type="button"
             onClick={() => setExpanded((v) => !v)}
-            className="mt-4 self-start text-[12px] tracking-[0.03em] font-bold text-blue hover:underline"
+            className="mt-4 self-start text-[12px] tracking-[0.03em] font-bold text-ochre hover:underline"
           >
             {expanded ? "Read less ↑" : "Read more ↓"}
           </button>

@@ -44,9 +44,9 @@ export default function Shortlist2025() {
       />
 
       <main className="flex-1">
-        <section className="bg-ink text-paper py-[80px]">
+        <section className="bg-teal text-paper py-[80px]">
           <Container size="prize">
-            <div className="text-[11px] tracking-[0.08em] uppercase font-bold text-blue mb-4">
+            <div className="text-[11px] tracking-[0.08em] uppercase font-bold text-ochre mb-4">
               2025 Inaugural Edition · Archive
             </div>
             <h1 className="text-[clamp(28px,4vw,48px)] font-bold leading-tight max-w-[640px]">

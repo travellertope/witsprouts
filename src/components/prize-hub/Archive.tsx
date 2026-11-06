@@ -19,7 +19,7 @@ export function Archive() {
               key={edition.year}
               className="grid grid-cols-1 sm:grid-cols-[100px_1fr_auto] gap-3.5 sm:gap-6 items-center py-7 border-b border-line"
             >
-              <div className="text-[28px] font-extrabold text-blue">{edition.year}</div>
+              <div className="text-[28px] font-bold text-ochre">{edition.year}</div>
               <div>
                 <div className="text-[17px] font-bold">{edition.name}</div>
                 <div className="text-[13.5px] text-ink-soft mt-1">{edition.meta}</div>

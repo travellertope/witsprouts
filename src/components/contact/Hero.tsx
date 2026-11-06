@@ -14,7 +14,7 @@ export function Hero() {
       />
       <div className="hero-scrim-bottom absolute inset-0" />
       <Container size="prize" className="relative z-[2] h-full flex flex-col justify-end pb-11">
-        <h1 className="text-white font-extrabold text-[clamp(32px,4.6vw,50px)] leading-[1.12] tracking-tight max-w-[600px]">
+        <h1 className="text-white font-bold text-[clamp(32px,4.6vw,50px)] leading-[1.12] tracking-tight max-w-[600px]">
           Let&apos;s Talk
         </h1>
         <p className="text-white/85 mt-3 text-[15.5px] leading-relaxed max-w-[480px]">

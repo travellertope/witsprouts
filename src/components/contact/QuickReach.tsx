@@ -31,7 +31,7 @@ export function QuickReach() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-line border border-line">
           {cards.map((card) => (
             <div key={card.tag} className="bg-paper p-8 text-center">
-              <div className="text-[11px] tracking-[0.05em] uppercase font-bold text-blue">
+              <div className="text-[11px] tracking-[0.05em] uppercase font-bold text-ochre">
                 {card.tag}
               </div>
               <div className="text-[17px] font-bold mt-2.5">{card.value}</div>

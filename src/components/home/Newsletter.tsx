@@ -31,11 +31,11 @@ export function Newsletter() {
   }
 
   return (
-    <section className="bg-ink text-paper" id="contact">
+    <section className="bg-teal text-paper" id="contact">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[60px] py-20 items-center">
           <div>
-            <h2 className="font-extrabold text-[clamp(26px,3.2vw,36px)] leading-[1.12] tracking-tight">
+            <h2 className="font-bold text-[clamp(26px,3.2vw,36px)] leading-[1.12] tracking-tight">
               Stay Close To The Culture
             </h2>
             <p className="mt-3.5 text-white/65 text-[14.5px] leading-relaxed max-w-[400px]">
@@ -84,7 +84,7 @@ export function Newsletter() {
               {status === "loading" ? "Signing Up…" : "Sign Up"}
             </Button>
             {status === "done" && (
-              <p className="mt-3 text-sm text-blue">You&apos;re on the list — thank you.</p>
+              <p className="mt-3 text-sm text-ochre">You&apos;re on the list — thank you.</p>
             )}
             {status === "error" && (
               <p className="mt-3 text-sm text-red-400">

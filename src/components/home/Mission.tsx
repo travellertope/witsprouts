@@ -1,21 +1,19 @@
-import { Container } from "@/components/ui/Container";
-
 export function Mission() {
   return (
-    <section className="bg-ink text-paper text-center py-[110px]" id="mission">
-      <Container>
-        <h2 className="font-extrabold text-[clamp(28px,4vw,46px)] leading-[1.12] tracking-tight max-w-[780px] mx-auto">
-          Culture knows no borders, and neither does our commitment to those
-          who make it.
+    <section className="py-40 lg:py-64 px-6 md:px-12 bg-teal text-paper flex items-center justify-center text-center" id="mission">
+      <div className="max-w-[1400px] mx-auto relative">
+        <span className="absolute -top-16 md:-top-32 left-1/2 -translate-x-1/2 text-[120px] md:text-[200px] text-ochre/20 font-serif leading-none select-none">
+          &ldquo;
+        </span>
+        <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-[1.1] relative z-10">
+          Culture knows no borders,{" "}
+          <br className="hidden lg:block" />
+          and neither does our{" "}
+          <br className="hidden lg:block" />
+          commitment to{" "}
+          <span className="text-ochre">those who make it.</span>
         </h2>
-        <p className="max-w-[560px] mx-auto mt-[22px] text-[15.5px] leading-loose text-white/65">
-          Our mission is to uplift and protect African creativity everywhere.
-          We champion artistic excellence, advocate for creative rights, and
-          build opportunities for those shaping the culture and stories of
-          today and tomorrow.
-        </p>
-        <div className="chevron-mark bg-blue w-14 h-14 mx-auto mt-11" />
-      </Container>
+      </div>
     </section>
   );
 }

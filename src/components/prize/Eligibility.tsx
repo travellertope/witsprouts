@@ -20,7 +20,7 @@ export function Eligibility() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-[18px] mb-8">
           {items.map((item) => (
             <div key={item} className="border border-line p-6 text-center">
-              <div className="w-[38px] h-[38px] rounded-full bg-mist mx-auto mb-3.5 flex items-center justify-center text-blue font-bold">
+              <div className="w-[38px] h-[38px] rounded-full bg-mist mx-auto mb-3.5 flex items-center justify-center text-ochre font-bold">
                 ✓
               </div>
               <p className="text-[13.5px] leading-relaxed text-ink-soft">{item}</p>

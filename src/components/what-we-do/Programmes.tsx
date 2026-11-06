@@ -15,7 +15,7 @@ export function Programmes() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-line border border-line">
           {programmes.map((p) => (
             <div key={p.num} className="bg-paper p-8">
-              <div className="text-xs font-bold text-blue tracking-[0.05em]">{p.num}</div>
+              <div className="text-xs font-bold text-ochre tracking-[0.05em]">{p.num}</div>
               <h3 className="text-lg font-bold mt-2.5">{p.title}</h3>
               <p className="text-sm leading-relaxed text-ink-soft mt-2.5">{p.description}</p>
             </div>

@@ -46,7 +46,7 @@ export function Footer({
   const compact = size === "prize";
   const lgGrid = LG_GRID_TEMPLATE[columns.length] ?? "lg:grid-cols-[1.3fr_repeat(auto-fit,minmax(120px,1fr))]";
   return (
-    <footer className={`bg-ink text-white/70 ${compact ? "pt-12" : "pt-14"}`}>
+    <footer className={`bg-teal text-white/70 ${compact ? "pt-12" : "pt-14"}`}>
       <Container size={size}>
         <div
           className={`grid grid-cols-1 md:grid-cols-2 ${lgGrid} gap-8 pb-11 ${
@@ -69,7 +69,7 @@ export function Footer({
               <ul className="space-y-2.5">
                 {col.links.map((link) => (
                   <li key={link.label} className="text-[13.5px]">
-                    <a href={link.href} className="hover:text-blue">
+                    <a href={link.href} className="hover:text-ochre">
                       {link.label}
                     </a>
                   </li>
@@ -83,7 +83,7 @@ export function Footer({
           {bottomRight ?? (
             <div className="flex gap-5 text-xs text-white/45">
               {bottomLinks.map((link) => (
-                <Link key={link.label} href={link.href} className="hover:text-blue">
+                <Link key={link.label} href={link.href} className="hover:text-ochre">
                   {link.label}
                 </Link>
               ))}

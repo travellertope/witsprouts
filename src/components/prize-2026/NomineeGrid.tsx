@@ -23,7 +23,7 @@ function NomineeCard({ nominee }: { nominee: Nominee }) {
         />
       </div>
       <div className="flex flex-col flex-1 px-6 pt-5 pb-6">
-        <div className="text-[11px] tracking-[0.07em] uppercase font-bold text-blue mb-2">
+        <div className="text-[11px] tracking-[0.07em] uppercase font-bold text-ochre mb-2">
           2026 Longlist
         </div>
         <h2 className="text-[19px] font-bold leading-snug">{nominee.name}</h2>
@@ -42,7 +42,7 @@ function NomineeCard({ nominee }: { nominee: Nominee }) {
           <button
             type="button"
             onClick={() => setExpanded((v) => !v)}
-            className="mt-4 self-start text-[12px] tracking-[0.03em] font-bold text-blue hover:underline"
+            className="mt-4 self-start text-[12px] tracking-[0.03em] font-bold text-ochre hover:underline"
           >
             {expanded ? "Read less ↑" : "Read more ↓"}
           </button>

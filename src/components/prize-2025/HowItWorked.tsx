@@ -18,7 +18,7 @@ export function HowItWorked() {
               key={step}
               className="grid grid-cols-[48px_1fr] gap-5 py-[22px] border-b border-line last:border-b-0"
             >
-              <div className="step-num text-xl font-extrabold text-blue" />
+              <div className="step-num text-xl font-bold text-ochre" />
               <p className="text-[14.5px] leading-relaxed text-ink-soft">{step}</p>
             </div>
           ))}

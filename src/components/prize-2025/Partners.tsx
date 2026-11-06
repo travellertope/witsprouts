@@ -16,13 +16,13 @@ export function Partners() {
           {partners.map((partner) => (
             <div key={partner.name} className="bg-paper py-8 px-[22px] text-center">
               <div className="text-lg font-bold">{partner.name}</div>
-              <div className="text-[10.5px] tracking-[0.05em] uppercase font-bold text-blue mt-2">
+              <div className="text-[10.5px] tracking-[0.05em] uppercase font-bold text-ochre mt-2">
                 {partner.tag}
               </div>
             </div>
           ))}
         </div>
-        <blockquote className="border-l-2 border-blue pl-5 mt-8 max-w-[640px] mx-auto text-left">
+        <blockquote className="border-l-2 border-ochre pl-5 mt-8 max-w-[640px] mx-auto text-left">
           <p className="text-[17px] leading-snug font-semibold">
             &ldquo;{partnerQuote.quote}&rdquo;
           </p>

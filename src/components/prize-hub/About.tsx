@@ -6,7 +6,7 @@ export function About() {
     <section className="py-[88px]" id="about">
       <Container narrow>
         <SectionHead
-          title="Making Sure The Storytellers Are Seen"
+          title="About the Prize"
           align="center"
           compact
           description="The Witsprouts Storytelling Prize was launched to acknowledge and amplify the voices of storytellers who are reinventing the way stories are told. It exists to revive the art of oral storytelling while celebrating and rewarding exceptional storytelling talent — sitting inside The Witsprouts Project's wider mission to foster a deeper engagement in African arts and culture."

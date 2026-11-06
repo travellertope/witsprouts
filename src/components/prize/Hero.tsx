@@ -32,7 +32,7 @@ export function Hero() {
             See Key Dates →
           </Button>
           <Button href="#spotlight" variant="white">
-            Meet Our First Winner
+            Meet Our Inaugural Winner
           </Button>
         </div>
       </Container>

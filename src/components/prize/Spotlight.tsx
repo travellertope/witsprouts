@@ -17,7 +17,7 @@ export function Spotlight() {
           </div>
           <div>
             <div className="text-[11px] tracking-[0.08em] uppercase font-bold text-blue">
-              2025 Spotlight · Our First Winner
+              2025 Spotlight · Our Inaugural Winner
             </div>
             <h3 className="text-[clamp(22px,2.8vw,30px)] font-bold mt-3">
               Rachel Ajisafe — &ldquo;Haunting Song of Promises&rdquo;

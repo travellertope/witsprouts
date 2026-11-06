@@ -5,7 +5,6 @@ import { PartnersRow } from "@/components/ui/PartnersRow";
 import { StatStrip } from "@/components/ui/StatStrip";
 import { Hero } from "@/components/prize/Hero";
 import { About } from "@/components/prize/About";
-import { WhatsNew } from "@/components/prize/WhatsNew";
 import { KeyDates } from "@/components/prize/KeyDates";
 import { Spotlight } from "@/components/prize/Spotlight";
 import { Faq } from "@/components/prize/Faq";
@@ -29,7 +28,6 @@ export default function Prize2026() {
         size="prize"
         links={[
           { label: "About", href: "#about" },
-          { label: "What's New", href: "#whats-new" },
           { label: "Key Dates", href: "#dates" },
           { label: "Longlist", href: "/prize/2026/longlist" },
           { label: "2025 Winner", href: "#spotlight" },
@@ -72,7 +70,6 @@ export default function Prize2026() {
         </section>
 
         <About />
-        <WhatsNew />
         <KeyDates />
 
         <section className="bg-mist py-[88px]">

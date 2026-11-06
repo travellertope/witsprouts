@@ -6,7 +6,7 @@ export function About() {
     <section className="py-[88px]" id="about">
       <Container narrow>
         <SectionHead
-          title="Making Sure The Storytellers Are Seen"
+          title="About the Prize"
           align="center"
           compact
         />
@@ -15,13 +15,6 @@ export function About() {
           amplify the voices of storytellers who are reinventing the way
           stories are told. It exists to revive the art of oral storytelling
           while celebrating and rewarding exceptional storytelling talent.
-        </p>
-        <p className="text-[15.5px] leading-loose text-ink-soft mt-4">
-          The inaugural 2025 edition centred on the theme &ldquo;Rebooting
-          Legends and Memories,&rdquo; calling on Nigerian artists and
-          creatives to reimagine traditional African oral storytelling for
-          today&apos;s digital platforms through original 5–10 minute
-          theatrical video performances.
         </p>
         <blockquote className="border-l-2 border-ochre pl-5 my-[26px]">
           <p className="text-lg leading-snug font-semibold">

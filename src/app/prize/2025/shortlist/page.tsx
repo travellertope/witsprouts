@@ -4,6 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 import { SectionHead } from "@/components/ui/SectionHead";
 import { Container } from "@/components/ui/Container";
 import { FinalCta } from "@/components/ui/FinalCta";
+import { ArchivedBanner } from "@/components/prize-2025/ArchivedBanner";
 import { ShortlistGrid } from "@/components/prize-2025/ShortlistGrid";
 
 export const metadata: Metadata = {
@@ -15,6 +16,8 @@ export const metadata: Metadata = {
 export default function Shortlist2025() {
   return (
     <>
+      <ArchivedBanner />
+
       <Nav
         size="prize"
         links={[

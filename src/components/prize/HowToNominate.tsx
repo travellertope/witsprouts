@@ -1,17 +1,16 @@
 import { Container } from "@/components/ui/Container";
 import { SectionHead } from "@/components/ui/SectionHead";
-import { Button } from "@/components/ui/Button";
-import { steps, nominationFormUrl } from "@/lib/content/prize";
+import { steps } from "@/lib/content/prize";
 
 export function HowToNominate() {
   return (
     <section className="bg-mist py-[88px]" id="nominate">
       <Container narrow>
         <SectionHead
-          title="How Nominations Work"
+          title="How Nominations Worked"
           align="center"
           compact
-          description="This edition runs on nominations rather than direct self-submission — so the Prize can reach storytellers who might never put themselves forward."
+          description="This edition ran on nominations rather than direct self-submission — so the Prize could reach storytellers who might never put themselves forward."
         />
         <div className="steps">
           {steps.map((step) => (
@@ -28,9 +27,10 @@ export function HowToNominate() {
           ))}
         </div>
         <div className="text-center mt-9">
-          <Button href={nominationFormUrl} variant="blue">
-            Nominate a Storyteller →
-          </Button>
+          <p className="text-sm text-ink-soft">
+            Nominations for the 2026 edition closed on September 30, 2026.
+            The shortlist will be announced in due course.
+          </p>
         </div>
       </Container>
     </section>

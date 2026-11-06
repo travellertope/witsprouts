@@ -52,7 +52,7 @@ export function PromoRow() {
         <div className="absolute inset-0 hero-scrim-bottom" />
         <div className="relative">
           <div className="text-xs tracking-[0.08em] uppercase font-bold text-blue">
-            2nd Edition · Nominations Open
+            2nd Edition · Nominations Closed
           </div>
           <h3 className="text-2xl font-bold mt-3 max-w-[420px]">
             The Witsprouts Storytelling Prize 2026 — no theme, every form of
@@ -60,7 +60,7 @@ export function PromoRow() {
           </h3>
         </div>
         <span className="relative mt-5 text-[13px] tracking-[0.02em] font-semibold flex items-center gap-2">
-          How to Nominate a Storyteller <ArrowIcon />
+          View the 2026 Prize Edition <ArrowIcon />
         </span>
       </Link>
     </div>

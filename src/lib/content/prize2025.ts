@@ -25,6 +25,7 @@ export const judges = [
   {
     name: "Akanbi Taofeek",
     role: "Acclaimed playwright and stage director, known for deeply immersive theatrical works that bring text and performance into close conversation.",
+    photo: "/images/people/akanbi-taofeek.jpg",
   },
 ];
 

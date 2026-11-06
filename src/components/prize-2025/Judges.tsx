@@ -8,7 +8,7 @@ export function Judges() {
     <section className="py-20" id="judges">
       <Container narrow>
         <SectionHead
-          title="Two of Nigeria's Foremost Voices"
+          title="2025 Prize Judged By"
           align="center"
           compact
         />

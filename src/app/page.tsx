@@ -15,7 +15,6 @@ export default function Home() {
           { label: "About", href: "/about" },
           { label: "What We Do", href: "/what-we-do" },
           { label: "Storytelling Prize", href: "/prize" },
-          { label: "Longlist", href: "/prize/2026/longlist" },
           { label: "Get Involved", href: "/get-involved" },
           { label: "Contact", href: "/contact" },
         ]}

@@ -49,9 +49,6 @@ export default function Prize2026() {
             { num: prize2026.closesLabel, label: "Nominations Closed" },
           ]}
         />
-        <About />
-        <WhatsNew />
-
         <section className="bg-teal text-paper py-[72px]" id="longlist">
           <div className="max-w-[1160px] mx-auto px-8 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <div>
@@ -74,6 +71,8 @@ export default function Prize2026() {
           </div>
         </section>
 
+        <About />
+        <WhatsNew />
         <KeyDates />
 
         <section className="bg-mist py-[88px]">

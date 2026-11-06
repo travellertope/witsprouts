@@ -19,9 +19,7 @@ export function Hero() {
         className="relative z-[2] h-full flex flex-col justify-center items-center text-center"
       >
         <h1 className="text-white font-bold text-[clamp(34px,5vw,58px)] leading-[1.12] tracking-tight max-w-[720px]">
-          The Witsprouts
-          <br />
-          Storytelling Prize
+          Storytelling Prize 2026
         </h1>
         <p className="text-white/85 mt-4 text-base leading-relaxed max-w-[520px]">
           Celebrating storytellers doing the work of making stories matter —

@@ -10,7 +10,6 @@ import { WhatsNew } from "@/components/prize/WhatsNew";
 import { Eligibility } from "@/components/prize/Eligibility";
 import { HowToNominate } from "@/components/prize/HowToNominate";
 import { KeyDates } from "@/components/prize/KeyDates";
-import { Judges } from "@/components/prize/Judges";
 import { Spotlight } from "@/components/prize/Spotlight";
 import { Faq } from "@/components/prize/Faq";
 import { FinalCta } from "@/components/ui/FinalCta";
@@ -19,7 +18,7 @@ import { prize2026 } from "@/lib/content/prize";
 const partners2025 = [
   { name: "Hill-Top Creative Arts Foundation", tag: "2025 Edition Partner" },
   { name: "Orange Poetry", tag: "2025 Edition Partner" },
-  { name: "The Moveee", tag: "2025 Edition Partner" },
+  { name: "The Moveee", tag: "2025 Edition Partner", logo: "/images/partners/moveee-logo.png" },
 ];
 
 export const metadata: Metadata = {
@@ -103,7 +102,6 @@ export default function Prize2026() {
             align="center"
           />
         </section>
-        <Judges />
         <Spotlight />
         <Faq />
         <FinalCta

@@ -54,28 +54,8 @@ export const steps = [
 
 export const faqs = [
   {
-    q: "Who can be nominated?",
-    a: "Any young storyteller or voice artist using multimedia to tell engaging, impactful stories, working in any form of oral or multimedia storytelling, and based anywhere across Africa or the African diaspora.",
-  },
-  {
-    q: "Can I nominate myself?",
-    a: "Yes — anyone can nominate, including the storyteller themselves, a friend, a colleague, or a fan.",
-  },
-  {
-    q: "Is there a theme this year?",
-    a: "No. The 2nd edition has no set theme — it's open to all forms of oral and multimedia storytelling.",
-  },
-  {
-    q: "What formats count?",
-    a: "Podcasts, spoken word, animation, audio drama, video, and other forms of oral or multimedia storytelling.",
-  },
-  {
     q: "How is the winner chosen?",
     a: "Nominations are reviewed in-house by The Witsprouts Project team, who narrow the pool to a shortlist. A guest judge is then announced to make the final call.",
-  },
-  {
-    q: "Where do I submit a nomination?",
-    a: "Nominations for the 2026 edition closed on September 30, 2026. Stay tuned for the shortlist announcement.",
   },
   {
     q: "What does the winner receive?",

@@ -20,17 +20,19 @@ export const judges = [
   {
     name: "Jude Idada",
     role: "Award-winning writer and filmmaker, and winner of the NLNG-sponsored Nigeria Prize for Literature — one of the continent's most prestigious literary honours.",
+    photo: "/images/people/jude-idada.jpg",
   },
   {
     name: "Akanbi Taofeek",
     role: "Acclaimed playwright and stage director, known for deeply immersive theatrical works that bring text and performance into close conversation.",
+    photo: "/images/people/akanbi-taofeek.jpg",
   },
 ];
 
 export const partners = [
-  { name: "Hill-Top Creative Arts Foundation", tag: "2025 Edition Partner" },
-  { name: "Orange Poetry", tag: "2025 Edition Partner" },
-  { name: "The Moveee", tag: "2025 Edition Partner" },
+  { name: "Hill-Top Creative Arts Foundation", tag: "2025 Edition Partner", logo: "/images/partners/hcaf-logo.png" },
+  { name: "Orange Poetry", tag: "2025 Edition Partner", logo: "/images/partners/orange-poetry-logo.webp" },
+  { name: "The Moveee", tag: "2025 Edition Partner", logo: "/images/partners/moveee-logo.png" },
 ];
 
 export const partnerQuote = {

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Nav } from "@/components/layout/Nav";
-import { UtilityStrip, Breadcrumb } from "@/components/layout/UtilityStrip";
 import { Footer } from "@/components/layout/Footer";
 import { FinalCta } from "@/components/ui/FinalCta";
 import { Hero } from "@/components/what-we-do/Hero";
@@ -14,16 +13,6 @@ export const metadata: Metadata = {
 export default function WhatWeDo() {
   return (
     <>
-      <UtilityStrip
-        size="prize"
-        left={
-          <Breadcrumb
-            items={[{ label: "The Witsprouts Project", href: "/" }, { label: "What We Do" }]}
-          />
-        }
-        right={<div>INFO@WITSPROUTS.ORG</div>}
-      />
-
       <Nav
         size="prize"
         links={[

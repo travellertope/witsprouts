@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { SectionHead } from "@/components/ui/SectionHead";
 import { partners, partnerQuote } from "@/lib/content/prize2025";
@@ -14,9 +15,19 @@ export function Partners() {
         />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-line">
           {partners.map((partner) => (
-            <div key={partner.name} className="bg-paper py-8 px-[22px] text-center">
-              <div className="text-lg font-bold">{partner.name}</div>
-              <div className="text-[10.5px] tracking-[0.05em] uppercase font-bold text-ochre mt-2">
+            <div key={partner.name} className="bg-paper py-9 px-[26px] flex flex-col items-center justify-center text-center min-h-[120px]">
+              {partner.logo ? (
+                <Image
+                  src={partner.logo}
+                  alt={partner.name}
+                  width={160}
+                  height={52}
+                  className="object-contain max-h-[52px] w-auto mb-3"
+                />
+              ) : (
+                <div className="text-lg font-bold mb-2">{partner.name}</div>
+              )}
+              <div className="text-[11px] tracking-[0.05em] uppercase font-bold text-ochre">
                 {partner.tag}
               </div>
             </div>

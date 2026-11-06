@@ -1,14 +1,11 @@
 import type { Metadata } from "next";
 import { Nav } from "@/components/layout/Nav";
-import { UtilityStrip, Breadcrumb } from "@/components/layout/UtilityStrip";
 import { Footer } from "@/components/layout/Footer";
 import { PartnersRow } from "@/components/ui/PartnersRow";
 import { StatStrip } from "@/components/ui/StatStrip";
 import { Hero } from "@/components/prize/Hero";
 import { About } from "@/components/prize/About";
 import { WhatsNew } from "@/components/prize/WhatsNew";
-import { Eligibility } from "@/components/prize/Eligibility";
-import { HowToNominate } from "@/components/prize/HowToNominate";
 import { KeyDates } from "@/components/prize/KeyDates";
 import { Spotlight } from "@/components/prize/Spotlight";
 import { Faq } from "@/components/prize/Faq";
@@ -28,20 +25,6 @@ export const metadata: Metadata = {
 export default function Prize2026() {
   return (
     <>
-      <UtilityStrip
-        size="prize"
-        left={
-          <Breadcrumb
-            items={[
-              { label: "The Witsprouts Project", href: "/" },
-              { label: "Storytelling Prize", href: "/prize" },
-              { label: "2026 Edition" },
-            ]}
-          />
-        }
-        right={<div>PRIZE@WITSPROUTS.ORG</div>}
-      />
-
       <Nav
         size="prize"
         links={[
@@ -66,12 +49,6 @@ export default function Prize2026() {
             { num: prize2026.closesLabel, label: "Nominations Closed" },
           ]}
         />
-        <About />
-        <WhatsNew />
-        <Eligibility />
-        <HowToNominate />
-        <KeyDates />
-
         <section className="bg-teal text-paper py-[72px]" id="longlist">
           <div className="max-w-[1160px] mx-auto px-8 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <div>
@@ -93,6 +70,10 @@ export default function Prize2026() {
             </a>
           </div>
         </section>
+
+        <About />
+        <WhatsNew />
+        <KeyDates />
 
         <section className="bg-mist py-[88px]">
           <PartnersRow

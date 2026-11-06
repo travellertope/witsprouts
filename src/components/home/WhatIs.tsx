@@ -4,7 +4,7 @@ import { Container } from "@/components/ui/Container";
 
 export function WhatIs() {
   return (
-    <section className="py-32 lg:py-48 bg-paper" id="about">
+    <section className="py-16 lg:py-24 bg-paper" id="about">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32 items-center">
 
@@ -29,23 +29,24 @@ export function WhatIs() {
             </h2>
             <div className="space-y-6 text-lg text-ink/75 leading-relaxed font-light">
               <p>
-                We are an independent cultural organisation redefining the
-                creative ecosystem. By empowering African storytellers, artists,
-                and visionaries, we build the bridges that connect heritage to
-                the future.
+                We believe arts and culture are not a luxury sitting outside
+                development — they are development. A community that can tell
+                its own stories, celebrate its own heritage, and build
+                livelihoods from its own creativity is a community building
+                real, lasting resilience.
               </p>
               <p>
-                Starting as a grassroots initiative, we have evolved into a
-                multifaceted platform that identifies, nurtures, and amplifies
-                the talent that drives our cultural identity forward.
+                Starting from a base in Lagos and Abuja, we&apos;re building a
+                model that can travel — first across Nigeria, then across West
+                Africa, and outward to the wider African diaspora.
               </p>
             </div>
             <div className="mt-12">
               <Link
-                href="/about"
+                href="/get-involved"
                 className="group inline-flex items-center gap-4 text-teal font-semibold tracking-wide uppercase text-sm border-b-2 border-teal pb-1 hover:text-ochre hover:border-ochre transition-all duration-300"
               >
-                Read Our Story
+                Get Involved
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 transform group-hover:translate-x-2 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="square" strokeLinejoin="miter" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>

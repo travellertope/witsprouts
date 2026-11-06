@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Nav } from "@/components/layout/Nav";
-import { UtilityStrip, Breadcrumb } from "@/components/layout/UtilityStrip";
 import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/contact/Hero";
 import { QuickReach } from "@/components/contact/QuickReach";
@@ -13,14 +12,6 @@ export const metadata: Metadata = {
 export default function Contact() {
   return (
     <>
-      <UtilityStrip
-        size="prize"
-        left={
-          <Breadcrumb items={[{ label: "The Witsprouts Project", href: "/" }, { label: "Contact" }]} />
-        }
-        right={<div>INFO@WITSPROUTS.ORG</div>}
-      />
-
       <Nav
         size="prize"
         links={[

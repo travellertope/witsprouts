@@ -34,9 +34,9 @@ export default function Shortlist2025() {
       <Nav
         size="prize"
         links={[
-          { label: "2025 Archive", href: "/prize/2025" },
           { label: "The Theme", href: "/prize/2025#theme" },
           { label: "Judges", href: "/prize/2025#judges" },
+          { label: "Shortlist", href: "/prize/2025/shortlist" },
           { label: "The Winner", href: "/prize/2025#winner" },
         ]}
         ctaLabel="Current Edition →"

@@ -45,6 +45,40 @@ export const finalists = [
   { name: "Keesh Rowland", winner: false },
 ];
 
+export type Shortlister = {
+  name: string;
+  role: string;
+  photo: string;
+  winner: boolean;
+  performance?: string;
+  bio: string;
+};
+
+export const shortlist2025: Shortlister[] = [
+  {
+    name: "Debbie Ajom",
+    role: "Storyteller",
+    photo: "/images/people/debbie-ajom.jpg",
+    winner: false,
+    bio: "Debbie Ajom was shortlisted for the inaugural Witsprouts Storytelling Prize 2025, recognised for her compelling oral storytelling voice and her ability to draw audiences into vivid, emotionally resonant narratives.",
+  },
+  {
+    name: "Keesh Rowland",
+    role: "Storyteller",
+    photo: "/images/people/keesh-rowland.jpg",
+    winner: false,
+    bio: "Keesh Rowland was shortlisted for the inaugural Witsprouts Storytelling Prize 2025, standing out for the depth and craft he brings to oral and multimedia storytelling.",
+  },
+  {
+    name: "Rachel Ajisafe",
+    role: "Storyteller",
+    photo: "/images/people/rachel-ajisafe.jpg",
+    winner: true,
+    performance: "Haunting Song of Promises",
+    bio: "Rachel Ajisafe won the inaugural Witsprouts Storytelling Prize 2025 for her oral performance rooted in the cultural heritage of Sango, delivered with energy, passion, and poetic flair. She received ₦500,000 as the inaugural prize winner.",
+  },
+];
+
 export const winnerQuotes = [
   {
     quote:

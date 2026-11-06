@@ -42,7 +42,7 @@ export default function Prize2025() {
           { label: "The Theme", href: "#theme" },
           { label: "How It Worked", href: "#how" },
           { label: "Judges", href: "#judges" },
-          { label: "Partners", href: "#partners" },
+          { label: "Shortlist", href: "/prize/2025/shortlist" },
           { label: "The Winner", href: "#winner" },
         ]}
         ctaLabel="Current Edition →"
@@ -81,7 +81,7 @@ export default function Prize2025() {
               { label: "The Theme", href: "#theme" },
               { label: "How It Worked", href: "#how" },
               { label: "Judges", href: "#judges" },
-              { label: "Partners", href: "#partners" },
+              { label: "2025 Shortlist", href: "/prize/2025/shortlist" },
               { label: "The Winner", href: "#winner" },
             ],
           },

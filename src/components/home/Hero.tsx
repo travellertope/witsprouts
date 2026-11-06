@@ -8,15 +8,22 @@ export function Hero() {
           Becomes <span className="text-ochre">Power.</span>
         </h1>
         <p className="mt-10 text-lg md:text-2xl text-ink/75 max-w-2xl mx-auto font-medium leading-relaxed tracking-tight">
-          An independent cultural organisation dedicated to amplifying voices,
-          bridging gaps, and redefining the creative landscape.
+          To foster a deeper engagement in African arts and culture. We build
+          platforms, opportunities, and communities for Africa&apos;s
+          creative generation.
         </p>
         <div className="mt-14 flex flex-col sm:flex-row items-center justify-center gap-6">
           <a
-            href="#about"
-            className="w-full sm:w-auto px-10 py-4 bg-teal text-paper text-sm font-semibold tracking-widest uppercase hover:bg-teal transition-colors duration-300 text-center"
+            href="/prize/2026"
+            className="w-full sm:w-auto px-10 py-4 bg-teal text-paper text-sm font-semibold tracking-widest uppercase hover:opacity-90 transition-opacity duration-300 text-center"
           >
-            Explore The Vision
+            Storytelling Prize
+          </a>
+          <a
+            href="#about"
+            className="w-full sm:w-auto px-10 py-4 border-2 border-teal text-teal text-sm font-semibold tracking-widest uppercase hover:bg-teal hover:text-paper transition-colors duration-300 text-center"
+          >
+            See What We Do
           </a>
         </div>
       </div>

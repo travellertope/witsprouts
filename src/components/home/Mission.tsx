@@ -13,6 +13,12 @@ export function Mission() {
           commitment to{" "}
           <span className="text-ochre">those who make it.</span>
         </h2>
+        <p className="mt-10 text-lg md:text-xl text-paper/65 max-w-[560px] mx-auto leading-relaxed relative z-10">
+          Our mission is to uplift and protect African creativity everywhere.
+          We champion artistic excellence, advocate for creative rights, and
+          build opportunities for those shaping the culture and stories of
+          today and tomorrow.
+        </p>
       </div>
     </section>
   );

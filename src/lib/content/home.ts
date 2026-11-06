@@ -11,7 +11,7 @@ export type Person = {
 
 export const storytellers: Person[] = [
   { initials: "RA", tag: "2025 Prize Winner", name: "Rachel Ajisafe", role: "Storyteller", photoUrl: "/images/people/rachel-ajisafe.jpg" },
-  { initials: "DA", tag: "2025 Finalist", name: "Debbie Ajom", role: "Storyteller" },
+  { initials: "DA", tag: "2025 Finalist", name: "Debbie Ajom", role: "Storyteller", photoUrl: "/images/people/debbie-ajom.jpg" },
   { initials: "KR", tag: "2025 Finalist", name: "Keesh Rowland", role: "Storyteller" },
   { initials: "JI", tag: "2025 Judge", name: "Jude Idada", role: "Writer & Filmmaker" },
 ];

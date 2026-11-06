@@ -43,16 +43,15 @@ export function Newsletter() {
               announcements, and stories from across the community.
             </p>
             <div className="flex gap-3 mt-6">
-              {["Instagram", "X", "TikTok"].map((label) => (
-                <a
-                  key={label}
-                  href="#"
-                  aria-label={label}
-                  className="w-8 h-8 rounded-full border border-white/30 flex items-center justify-center text-xs"
-                >
-                  {label.slice(0, 2).toUpperCase()}
-                </a>
-              ))}
+              <a
+                href="https://instagram.com/witsproutsorg"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="w-8 h-8 rounded-full border border-white/30 flex items-center justify-center text-xs hover:border-white/60 transition-colors"
+              >
+                IG
+              </a>
             </div>
           </div>
 

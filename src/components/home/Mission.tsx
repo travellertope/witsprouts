@@ -1,6 +1,6 @@
 export function Mission() {
   return (
-    <section className="py-40 lg:py-64 px-6 md:px-12 bg-teal text-paper flex items-center justify-center text-center" id="mission">
+    <section className="py-20 lg:py-28 px-6 md:px-12 bg-teal text-paper flex items-center justify-center text-center" id="mission">
       <div className="max-w-[1400px] mx-auto relative">
         <span className="absolute -top-16 md:-top-32 left-1/2 -translate-x-1/2 text-[120px] md:text-[200px] text-ochre/20 font-serif leading-none select-none">
           &ldquo;

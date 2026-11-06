@@ -4,7 +4,7 @@ import { moments } from "@/lib/content/home";
 
 export function Moments() {
   return (
-    <section className="py-32 lg:py-48 bg-paper">
+    <section className="py-16 lg:py-24 bg-paper">
       <Container>
         <div className="flex justify-between items-end mb-16 border-b-2 border-teal pb-6">
           <h2 className="text-3xl md:text-5xl font-bold tracking-tighter text-teal">

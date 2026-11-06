@@ -16,7 +16,7 @@ import { FinalCta } from "@/components/ui/FinalCta";
 import { prize2026 } from "@/lib/content/prize";
 
 const partners2025 = [
-  { name: "Hill-Top Creative Arts Foundation", tag: "2025 Edition Partner" },
+  { name: "Hill-Top Creative Arts Foundation", tag: "2025 Edition Partner", logo: "/images/partners/hcaf-logo.png" },
   { name: "Orange Poetry", tag: "2025 Edition Partner", logo: "/images/partners/orange-poetry-logo.webp" },
   { name: "The Moveee", tag: "2025 Edition Partner", logo: "/images/partners/moveee-logo.png" },
 ];

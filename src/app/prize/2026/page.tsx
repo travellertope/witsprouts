@@ -48,8 +48,8 @@ export default function Prize2026() {
         links={[
           { label: "About", href: "#about" },
           { label: "What's New", href: "#whats-new" },
-          { label: "How to Nominate", href: "#nominate" },
           { label: "Key Dates", href: "#dates" },
+          { label: "Longlist", href: "/prize/2026/longlist" },
           { label: "2025 Winner", href: "#spotlight" },
           { label: "FAQ", href: "#faq" },
         ]}

@@ -8,6 +8,9 @@
   --line: #e4e1d6;
   --blue: #0296ff;
   --cream: #efe8d8;
+  --teal: #0A2528;
+  --ochre: #C5491F;
+  --hero-bg: #F9ECE8;
 }
 
 @theme inline {
@@ -19,7 +22,10 @@
   --color-blue: var(--blue);
   --color-cream: var(--cream);
 
-  --font-body: var(--font-inter), sans-serif;
+  --font-body: var(--font-jakarta), sans-serif;
+  --color-teal: var(--teal);
+  --color-ochre: var(--ochre);
+  --color-hero-bg: var(--hero-bg);
 }
 
 html {
@@ -122,6 +128,13 @@ body {
 }
 .pulse-dot {
   animation: pulse-dot 1.6s infinite;
+}
+
+/* Hero scroll indicator */
+@keyframes slideDown {
+  0% { transform: translateY(-100%); }
+  50% { transform: translateY(0); }
+  100% { transform: translateY(100%); }
 }
 
 /* Moments carousel scrollbar */

@@ -3,6 +3,7 @@ import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { StatStrip } from "@/components/ui/StatStrip";
 import { FinalCta } from "@/components/ui/FinalCta";
+import { ArchivedBanner } from "@/components/prize-2025/ArchivedBanner";
 import { Hero } from "@/components/prize-2025/Hero";
 import { Theme } from "@/components/prize-2025/Theme";
 import { Judges } from "@/components/prize-2025/Judges";
@@ -17,6 +18,8 @@ export const metadata: Metadata = {
 export default function Prize2025() {
   return (
     <>
+      <ArchivedBanner />
+
       <Nav
         size="prize"
         links={[

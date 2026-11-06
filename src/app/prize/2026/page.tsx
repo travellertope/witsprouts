@@ -72,6 +72,29 @@ export default function Prize2026() {
         <Eligibility />
         <HowToNominate />
         <KeyDates />
+
+        <section className="bg-ink text-paper py-[72px]" id="longlist">
+          <div className="max-w-[1160px] mx-auto px-8 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <div>
+              <div className="text-[11px] tracking-[0.08em] uppercase font-bold text-blue mb-2">
+                Now Live
+              </div>
+              <h2 className="text-[clamp(22px,2.8vw,30px)] font-bold leading-snug">
+                The 2026 Longlist Is Announced
+              </h2>
+              <p className="mt-2 text-[14.5px] text-white/65 max-w-[480px]">
+                Nine storytellers from across Nigeria and the diaspora, nominated for this edition of the prize.
+              </p>
+            </div>
+            <a
+              href="/prize/2026/longlist"
+              className="flex-none inline-flex items-center gap-2 px-6 py-3 bg-blue text-white text-[13.5px] font-bold tracking-[0.02em] hover:bg-blue/90 transition-colors"
+            >
+              View the Longlist →
+            </a>
+          </div>
+        </section>
+
         <section className="bg-mist py-[88px]">
           <PartnersRow
             partners={partners2025}
@@ -86,9 +109,9 @@ export default function Prize2026() {
         <FinalCta
           size="prize"
           title="Nominations Have Closed"
-          description="Thank you to everyone who submitted a nomination. The shortlist will be announced in due course."
-          primaryLabel="See Key Dates →"
-          primaryHref="#dates"
+          description="Thank you to everyone who submitted a nomination. Nine storytellers have been longlisted — the shortlist follows in due course."
+          primaryLabel="View the Longlist →"
+          primaryHref="/prize/2026/longlist"
           secondaryLabel="Questions? Email Us"
           secondaryHref="mailto:prize@witsprouts.org"
         />
@@ -102,8 +125,8 @@ export default function Prize2026() {
             title: "The Prize",
             links: [
               { label: "About", href: "#about" },
-              { label: "How to Nominate", href: "#nominate" },
               { label: "Key Dates", href: "#dates" },
+              { label: "2026 Longlist", href: "/prize/2026/longlist" },
               { label: "FAQ", href: "#faq" },
             ],
           },

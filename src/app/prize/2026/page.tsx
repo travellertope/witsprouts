@@ -7,8 +7,6 @@ import { StatStrip } from "@/components/ui/StatStrip";
 import { Hero } from "@/components/prize/Hero";
 import { About } from "@/components/prize/About";
 import { WhatsNew } from "@/components/prize/WhatsNew";
-import { Eligibility } from "@/components/prize/Eligibility";
-import { HowToNominate } from "@/components/prize/HowToNominate";
 import { KeyDates } from "@/components/prize/KeyDates";
 import { Spotlight } from "@/components/prize/Spotlight";
 import { Faq } from "@/components/prize/Faq";
@@ -68,8 +66,6 @@ export default function Prize2026() {
         />
         <About />
         <WhatsNew />
-        <Eligibility />
-        <HowToNominate />
         <KeyDates />
 
         <section className="bg-teal text-paper py-[72px]" id="longlist">

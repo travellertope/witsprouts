@@ -7,7 +7,6 @@ import { FinalCta } from "@/components/ui/FinalCta";
 import { ArchivedBanner } from "@/components/prize-2025/ArchivedBanner";
 import { Hero } from "@/components/prize-2025/Hero";
 import { Theme } from "@/components/prize-2025/Theme";
-import { HowItWorked } from "@/components/prize-2025/HowItWorked";
 import { Judges } from "@/components/prize-2025/Judges";
 import { Partners } from "@/components/prize-2025/Partners";
 import { WinnerSpotlight } from "@/components/prize-2025/WinnerSpotlight";
@@ -40,7 +39,6 @@ export default function Prize2025() {
         size="prize"
         links={[
           { label: "The Theme", href: "#theme" },
-          { label: "How It Worked", href: "#how" },
           { label: "Judges", href: "#judges" },
           { label: "Shortlist", href: "/prize/2025/shortlist" },
           { label: "The Winner", href: "#winner" },
@@ -53,7 +51,6 @@ export default function Prize2025() {
         <Hero />
         <StatStrip size="prize" cols={4} stats={stats} />
         <Theme />
-        <HowItWorked />
         <Judges />
         <Partners />
         <WinnerSpotlight />
@@ -79,7 +76,6 @@ export default function Prize2025() {
             title: "This Archive",
             links: [
               { label: "The Theme", href: "#theme" },
-              { label: "How It Worked", href: "#how" },
               { label: "Judges", href: "#judges" },
               { label: "2025 Shortlist", href: "/prize/2025/shortlist" },
               { label: "The Winner", href: "#winner" },

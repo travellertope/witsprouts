@@ -13,7 +13,7 @@ export function PromoRow() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-[1fr_1.4fr] gap-px bg-line">
       <Link
-        href="#storytellers"
+        href="/prize/2025/shortlist"
         className="group relative overflow-hidden text-paper p-10 min-h-[280px] flex flex-col justify-between"
       >
         <Image

@@ -1,6 +1,6 @@
 export function Hero() {
   return (
-    <header className="relative min-h-screen flex flex-col justify-center items-center px-6 md:px-12 pt-20 overflow-hidden bg-hero-bg">
+    <header className="relative min-h-screen flex flex-col justify-center items-center px-6 md:px-12 overflow-hidden bg-hero-bg">
       <div className="max-w-5xl mx-auto text-center z-10">
         <h1 className="text-[clamp(52px,8vw,110px)] leading-[0.9] font-bold tracking-tighter text-teal">
           Where Culture

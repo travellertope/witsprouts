@@ -11,7 +11,7 @@ export function Judges() {
           title="Selection Process"
           align="center"
           compact
-          description="Nominations are reviewed in-house by The Witsprouts Project team, who narrow the pool to a shortlist. A guest judge is then announced to make the final call."
+          description="Nominations are reviewed in-house by The Witsprouts Project team, who narrow the pool to a shortlist. The judging panel then makes the final call."
         />
         <div className="grid grid-cols-1 md:grid-cols-[1fr_1.4fr] gap-5 items-stretch">
           <div className="border-[1.5px] border-dashed border-line p-7 flex flex-col justify-center items-center text-center">

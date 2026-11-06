@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { nominationFormUrl } from "@/lib/content/prize";
 
 export function Hero() {
   return (
@@ -29,8 +28,8 @@ export function Hero() {
           in any form, anywhere across Africa and the diaspora.
         </p>
         <div className="flex gap-3.5 mt-7 justify-center flex-wrap">
-          <Button href={nominationFormUrl} variant="blue">
-            Nominate a Storyteller →
+          <Button href="#dates" variant="blue">
+            See Key Dates →
           </Button>
           <Button href="#spotlight" variant="white">
             Meet Our First Winner

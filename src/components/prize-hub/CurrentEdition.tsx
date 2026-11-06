@@ -1,7 +1,6 @@
 import { Container } from "@/components/ui/Container";
 import { SectionHead } from "@/components/ui/SectionHead";
 import { Button } from "@/components/ui/Button";
-import { nominationFormUrl } from "@/lib/content/prize";
 
 const atAGlance = [
   { label: "Theme", value: "None — open scope" },
@@ -18,8 +17,7 @@ export function CurrentEdition() {
         <div className="bg-ink text-paper p-9 md:p-14 grid grid-cols-1 md:grid-cols-[1.2fr_1fr] gap-12 items-center">
           <div>
             <div className="inline-flex items-center gap-2 text-xs tracking-[0.08em] uppercase font-bold text-blue">
-              <span className="pulse-dot w-[7px] h-[7px] rounded-full bg-blue" />
-              2nd Edition · Nominations Open
+              2nd Edition · Nominations Closed
             </div>
             <h3 className="text-[clamp(24px,3vw,34px)] font-bold mt-3.5">
               The Witsprouts Storytelling Prize 2026
@@ -37,9 +35,9 @@ export function CurrentEdition() {
                 </div>
               </div>
               <div>
-                <div className="text-xl font-extrabold text-blue">Aug 10 – Sep 30</div>
+                <div className="text-xl font-extrabold text-blue">Sep 30</div>
                 <div className="text-[11px] text-white/50 uppercase tracking-[0.04em] mt-0.5">
-                  Nomination Window
+                  Nominations Closed
                 </div>
               </div>
             </div>
@@ -47,8 +45,8 @@ export function CurrentEdition() {
               <Button href="/prize/2026" variant="blue">
                 Visit the 2026 Edition →
               </Button>
-              <Button href={nominationFormUrl} variant="white">
-                Nominate a Storyteller
+              <Button href="mailto:prize@witsprouts.org" variant="white">
+                Questions? Email Us
               </Button>
             </div>
           </div>

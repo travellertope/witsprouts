@@ -50,7 +50,7 @@ export default function Home() {
           { label: "Get Involved", href: "/get-involved" },
           { label: "Contact", href: "/contact" },
         ]}
-        ctaLabel="Nominate a Storyteller"
+        ctaLabel="Storytelling Prize"
         ctaHref="/prize/2026"
       />
 

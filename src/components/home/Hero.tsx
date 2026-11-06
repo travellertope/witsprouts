@@ -27,7 +27,7 @@ export function Hero() {
         </p>
         <div className="flex gap-3.5 mt-7 flex-wrap">
           <Button href="/prize/2026" variant="solid" className="!bg-white !text-ink !border-white">
-            Nominate a Storyteller →
+            Explore the Prize →
           </Button>
           <Button href="/what-we-do" variant="white">
             See What We Do

@@ -14,7 +14,7 @@ import { Judges } from "@/components/prize/Judges";
 import { Spotlight } from "@/components/prize/Spotlight";
 import { Faq } from "@/components/prize/Faq";
 import { FinalCta } from "@/components/ui/FinalCta";
-import { prize2026, nominationFormUrl } from "@/lib/content/prize";
+import { prize2026 } from "@/lib/content/prize";
 
 const partners2025 = [
   { name: "Hill-Top Creative Arts Foundation", tag: "2025 Edition Partner" },
@@ -23,7 +23,7 @@ const partners2025 = [
 ];
 
 export const metadata: Metadata = {
-  title: "The Witsprouts Storytelling Prize — 2nd Edition · Nominations Open",
+  title: "The Witsprouts Storytelling Prize — 2nd Edition · Nominations Closed",
 };
 
 export default function Prize2026() {
@@ -53,8 +53,8 @@ export default function Prize2026() {
           { label: "2025 Winner", href: "#spotlight" },
           { label: "FAQ", href: "#faq" },
         ]}
-        ctaLabel="Nominate a Storyteller"
-        ctaHref={nominationFormUrl}
+        ctaLabel="Questions? Email Us"
+        ctaHref="mailto:prize@witsprouts.org"
       />
 
       <main className="flex-1">
@@ -63,8 +63,8 @@ export default function Prize2026() {
           size="prize"
           stats={[
             { num: prize2026.purse, label: "Prize Purse" },
-            { num: prize2026.opensLabel, label: "Nominations Open" },
-            { num: prize2026.closesLabel, label: "Nominations Close" },
+            { num: prize2026.opensLabel, label: "Nominations Opened" },
+            { num: prize2026.closesLabel, label: "Nominations Closed" },
           ]}
         />
         <About />
@@ -85,10 +85,10 @@ export default function Prize2026() {
         <Faq />
         <FinalCta
           size="prize"
-          title="Know A Storyteller Worth Celebrating?"
-          description="Nominations close September 30, 2026. Put them forward — or put yourself forward."
-          primaryLabel="Nominate Now →"
-          primaryHref={nominationFormUrl}
+          title="Nominations Have Closed"
+          description="Thank you to everyone who submitted a nomination. The shortlist will be announced in due course."
+          primaryLabel="See Key Dates →"
+          primaryHref="#dates"
           secondaryLabel="Questions? Email Us"
           secondaryHref="mailto:prize@witsprouts.org"
         />

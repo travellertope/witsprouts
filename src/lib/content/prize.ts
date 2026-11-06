@@ -6,6 +6,8 @@
 // and can be repointed without touching every CTA on the site.
 export const nominationFormUrl = "https://www.witsprouts.org/2026prize";
 
+export const nominationsOpen = false;
+
 export const prize2026 = {
   edition: "2nd Edition",
   purse: "₦500,000",
@@ -23,8 +25,8 @@ export type TimelineItem = {
 };
 
 export const timeline: TimelineItem[] = [
-  { tag: "Open Now", title: "Nominations Open", date: "August 10, 2026", active: true },
-  { tag: "Upcoming", title: "Nominations Close", date: "September 30, 2026" },
+  { tag: "Closed", title: "Nominations Open", date: "August 10, 2026" },
+  { tag: "Closed", title: "Nominations Close", date: "September 30, 2026" },
   { tag: "Upcoming", title: "Shortlist Announced", date: "Date to be confirmed" },
   { tag: "Upcoming", title: "Winner Announced", date: "Date to be confirmed" },
   { tag: "Upcoming", title: "Awards Ceremony", date: "Date to be confirmed" },
@@ -72,7 +74,7 @@ export const faqs = [
   },
   {
     q: "Where do I submit a nomination?",
-    a: "Right here on this page, using the nomination form below, between August 10 and September 30, 2026.",
+    a: "Nominations for the 2026 edition closed on September 30, 2026. Stay tuned for the shortlist announcement.",
   },
   {
     q: "What does the winner receive?",

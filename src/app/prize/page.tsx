@@ -7,7 +7,6 @@ import { Hero } from "@/components/prize-hub/Hero";
 import { About } from "@/components/prize-hub/About";
 import { CurrentEdition } from "@/components/prize-hub/CurrentEdition";
 import { Archive } from "@/components/prize-hub/Archive";
-import { nominationFormUrl } from "@/lib/content/prize";
 
 export const metadata: Metadata = {
   title: "The Witsprouts Storytelling Prize",
@@ -35,7 +34,7 @@ export default function PrizeHub() {
           { label: "Get Involved", href: "/get-involved" },
           { label: "Contact", href: "/contact" },
         ]}
-        ctaLabel="Nominate a Storyteller"
+        ctaLabel="View the 2026 Edition"
         ctaHref="/prize/2026"
       />
 
@@ -46,10 +45,10 @@ export default function PrizeHub() {
         <Archive />
         <FinalCta
           size="prize"
-          title="Know A Storyteller Worth Celebrating?"
-          description="The current edition is open for nominations now — no theme, every form of storytelling welcome."
-          primaryLabel="Nominate Now →"
-          primaryHref={nominationFormUrl}
+          title="Nominations Have Closed"
+          description="Thank you to everyone who submitted a nomination for the 2026 edition. The shortlist will be announced in due course."
+          primaryLabel="View the 2026 Edition →"
+          primaryHref="/prize/2026"
           secondaryLabel="Questions? Email Us"
           secondaryHref="mailto:prize@witsprouts.org"
         />

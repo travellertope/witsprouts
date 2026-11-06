@@ -51,7 +51,6 @@ export default function Prize2026() {
         />
         <About />
         <WhatsNew />
-        <KeyDates />
 
         <section className="bg-teal text-paper py-[72px]" id="longlist">
           <div className="max-w-[1160px] mx-auto px-8 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
@@ -74,6 +73,8 @@ export default function Prize2026() {
             </a>
           </div>
         </section>
+
+        <KeyDates />
 
         <section className="bg-mist py-[88px]">
           <PartnersRow

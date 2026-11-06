@@ -5,7 +5,6 @@ import {
   SocialIcons,
 } from "@/components/layout/UtilityStrip";
 import { Footer } from "@/components/layout/Footer";
-import { StatStrip } from "@/components/ui/StatStrip";
 import { Hero } from "@/components/home/Hero";
 import { PromoRow } from "@/components/home/PromoRow";
 import { WhatIs } from "@/components/home/WhatIs";
@@ -56,13 +55,6 @@ export default function Home() {
 
       <main className="flex-1">
         <Hero />
-        <StatStrip
-          stats={[
-            { num: "₦500K", label: "Storytelling Prize" },
-            { num: "6", label: "SDGs Aligned" },
-            { num: "3", label: "2025 Partners" },
-          ]}
-        />
         <PromoRow />
         <WhatIs />
         <Storytellers />

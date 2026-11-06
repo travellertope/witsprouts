@@ -82,6 +82,7 @@ export const news: NewsItem[] = [
 export type Partner = {
   name: string;
   tag: string;
+  logo?: string;
 };
 
 export const partners: Partner[] = [

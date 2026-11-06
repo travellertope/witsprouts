@@ -22,14 +22,15 @@ export type TimelineItem = {
   title: string;
   date: string;
   active?: boolean;
+  href?: string;
 };
 
 export const timeline: TimelineItem[] = [
   { tag: "Closed", title: "Nominations Open", date: "August 10, 2026" },
   { tag: "Closed", title: "Nominations Close", date: "September 30, 2026" },
-  { tag: "Upcoming", title: "Shortlist Announced", date: "Date to be confirmed" },
-  { tag: "Upcoming", title: "Winner Announced", date: "Date to be confirmed" },
-  { tag: "Upcoming", title: "Awards Ceremony", date: "Date to be confirmed" },
+  { tag: "Live Now", title: "Longlist Announced", date: "November 6, 2026", active: true, href: "/prize/2026/longlist" },
+  { tag: "Upcoming", title: "Shortlist Announced", date: "November 27, 2026" },
+  { tag: "Upcoming", title: "Winner Announced", date: "December 14, 2026" },
 ];
 
 export const steps = [

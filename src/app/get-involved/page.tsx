@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Nav } from "@/components/layout/Nav";
-import { UtilityStrip, Breadcrumb } from "@/components/layout/UtilityStrip";
 import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/get-involved/Hero";
 import { PathwaysAndForm } from "@/components/get-involved/PathwaysAndForm";
@@ -12,16 +11,6 @@ export const metadata: Metadata = {
 export default function GetInvolved() {
   return (
     <>
-      <UtilityStrip
-        size="prize"
-        left={
-          <Breadcrumb
-            items={[{ label: "The Witsprouts Project", href: "/" }, { label: "Get Involved" }]}
-          />
-        }
-        right={<div>INFO@WITSPROUTS.ORG</div>}
-      />
-
       <Nav
         size="prize"
         links={[

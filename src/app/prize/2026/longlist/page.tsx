@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Nav } from "@/components/layout/Nav";
-import { UtilityStrip, Breadcrumb } from "@/components/layout/UtilityStrip";
 import { Footer } from "@/components/layout/Footer";
 import { FinalCta } from "@/components/ui/FinalCta";
 import { LonglistHero } from "@/components/prize-2026/LonglistHero";
@@ -15,21 +14,6 @@ export const metadata: Metadata = {
 export default function Longlist2026() {
   return (
     <>
-      <UtilityStrip
-        size="prize"
-        left={
-          <Breadcrumb
-            items={[
-              { label: "The Witsprouts Project", href: "/" },
-              { label: "Storytelling Prize", href: "/prize" },
-              { label: "2026 Edition", href: "/prize/2026" },
-              { label: "Longlist" },
-            ]}
-          />
-        }
-        right={<div>PRIZE@WITSPROUTS.ORG</div>}
-      />
-
       <Nav
         size="prize"
         links={[

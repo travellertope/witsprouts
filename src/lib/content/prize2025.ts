@@ -20,6 +20,7 @@ export const judges = [
   {
     name: "Jude Idada",
     role: "Award-winning writer and filmmaker, and winner of the NLNG-sponsored Nigeria Prize for Literature — one of the continent's most prestigious literary honours.",
+    photo: "/images/people/jude-idada.jpg",
   },
   {
     name: "Akanbi Taofeek",

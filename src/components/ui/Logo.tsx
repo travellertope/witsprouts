@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const ASPECT = 630 / 177;
+const ASPECT = 633 / 226;
 
 export function Logo({
   href = "/",

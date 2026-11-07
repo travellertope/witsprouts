@@ -9,8 +9,8 @@ export function OurStory() {
           {/* Image */}
           <div className="relative overflow-hidden aspect-[4/3] w-full">
             <Image
-              src="/images/about/about-why.webp"
-              alt="Why Witsprouts"
+              src="/images/home/what-community.jpg"
+              alt="Community of young creatives"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover object-center"

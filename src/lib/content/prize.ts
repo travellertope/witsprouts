@@ -55,7 +55,7 @@ export const steps = [
 export const faqs = [
   {
     q: "How is the winner chosen?",
-    a: "Nominations are reviewed in-house by The Witsprouts Project team, who narrow the pool to a shortlist. A guest judge is then announced to make the final call.",
+    a: "Nominations are reviewed in-house by The Witsprouts Project team, who narrow the pool to a shortlist. The judging panel then makes the final call.",
   },
   {
     q: "What does the winner receive?",

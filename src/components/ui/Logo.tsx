@@ -19,12 +19,12 @@ export function Logo({
   return (
     <Link href={href} className={`flex items-center ${className}`}>
       <Image
-        src={variant === "white" ? "/brand/logo-white.png" : "/brand/logo-blue.png"}
+        src="/brand/logo-blue.png"
         alt="The Witsprouts Project"
         width={width}
         height={height}
         priority
-        style={{ height, width: "auto" }}
+        style={{ height, width: "auto", filter: variant === "white" ? "brightness(0) invert(1)" : undefined }}
       />
     </Link>
   );

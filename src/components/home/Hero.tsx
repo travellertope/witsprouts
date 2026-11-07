@@ -28,13 +28,6 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40">
-        <span className="text-[10px] uppercase tracking-[0.3em] font-semibold text-teal">Scroll</span>
-        <svg width="16" height="10" viewBox="0 0 16 10" fill="none" aria-hidden="true">
-          <path d="M1 1l7 7 7-7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-teal" />
-        </svg>
-      </div>
     </header>
   );
 }

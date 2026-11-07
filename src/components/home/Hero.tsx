@@ -12,13 +12,7 @@ export function Hero() {
           platforms, opportunities, and communities for Africa&apos;s
           creative generation.
         </p>
-        <div className="mt-14 flex flex-col sm:flex-row items-center justify-center gap-6">
-          <a
-            href="/prize/2026"
-            className="w-full sm:w-auto px-10 py-4 bg-teal text-paper text-sm font-semibold tracking-widest uppercase hover:opacity-90 transition-opacity duration-300 text-center"
-          >
-            Storytelling Prize
-          </a>
+        <div className="mt-14 flex items-center justify-center">
           <a
             href="#about"
             className="w-full sm:w-auto px-10 py-4 border-2 border-teal text-teal text-sm font-semibold tracking-widest uppercase hover:bg-teal hover:text-paper transition-colors duration-300 text-center"

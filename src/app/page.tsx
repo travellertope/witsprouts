@@ -14,7 +14,6 @@ export default function Home() {
         links={[
           { label: "About", href: "/about" },
           { label: "What We Do", href: "/what-we-do" },
-          { label: "Storytelling Prize", href: "/prize" },
           { label: "Get Involved", href: "/get-involved" },
           { label: "Contact", href: "/contact" },
         ]}

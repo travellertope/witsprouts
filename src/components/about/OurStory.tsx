@@ -1,24 +1,27 @@
 import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 
-const images = [
-  { src: "/images/home/what-community.jpg", alt: "Community gathering", tall: true },
-  { src: "/images/about/about-story-1.jpg", alt: "Creative professionals at work" },
-  { src: "/images/about/about-story-2.jpg", alt: "Portrait of a creative" },
-  { src: "/images/home/what-audience.jpg", alt: "Audience at a cultural event" },
-];
-
 export function OurStory() {
   return (
     <section className="py-[88px]" id="story">
       <Container size="prize">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
+          {/* Image */}
+          <div className="relative overflow-hidden aspect-[4/3] w-full">
+            <Image
+              src="/images/about/about-why.webp"
+              alt="Why Witsprouts"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover object-center"
+            />
+          </div>
+
+          {/* Text */}
           <div>
-            <h2 className="font-bold text-[clamp(28px,3.4vw,42px)] leading-[1.12] tracking-tight">
+            <h2 className="font-bold text-[clamp(28px,3.4vw,42px)] leading-[1.12] tracking-tight mb-6">
               Why Witsprouts
             </h2>
-          </div>
-          <div>
             <p className="text-[15.5px] leading-loose text-ink-soft mb-4">
               Witsprouts began in 2018 as a personal development platform
               founded by Tope Akintayo, and grew into a storytelling and
@@ -41,25 +44,6 @@ export function OurStory() {
               Africa, and outward to the wider African diaspora.
             </p>
           </div>
-        </div>
-
-        <div className="grid grid-cols-2 gap-3 mt-14">
-          {images.map((img) => (
-            <div
-              key={img.src}
-              className={`relative overflow-hidden ${
-                img.tall ? "row-span-2 h-[318px]" : "h-[150px]"
-              }`}
-            >
-              <Image
-                src={img.src}
-                alt={img.alt}
-                fill
-                sizes="(min-width: 768px) 25vw, 50vw"
-                className="object-cover"
-              />
-            </div>
-          ))}
         </div>
       </Container>
     </section>

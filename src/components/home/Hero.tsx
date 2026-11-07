@@ -28,13 +28,6 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 opacity-50">
-        <span className="text-xs uppercase tracking-[0.3em] font-semibold text-teal">Scroll</span>
-        <div className="w-[1px] h-14 bg-teal/30 overflow-hidden relative">
-          <div className="absolute top-0 left-0 w-full bg-teal animate-[slideDown_2s_ease-in-out_infinite]" style={{ height: "100%" }} />
-        </div>
-      </div>
     </header>
   );
 }
